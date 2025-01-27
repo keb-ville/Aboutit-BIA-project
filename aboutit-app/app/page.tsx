@@ -1,10 +1,12 @@
-import Navbar from "@/components/navbar/NavBar";
+import { Button } from "../components/ui/button";
 
 function HomePage() {
   return (
     <div>
-      <Navbar />
-      <h1 className="text-2xl ">Welcome to About It</h1>
+      <h1 className="text-3xl">Home Page</h1>
+      <Button variant="outline" size="lg" className="capitalize m-8">
+        click me
+      </Button>
     </div>
   );
 }
