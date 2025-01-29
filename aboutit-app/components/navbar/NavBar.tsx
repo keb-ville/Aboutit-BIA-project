@@ -8,7 +8,7 @@ function Navbar() {
       <div className="container flex flex-col sm:flex-row  sm:justify-between sm:items-center flex-wrap gap-4 py-6">
         <Logo />
         <Button variant="default" size="lg" className="capitalize m-8 ml-auto">
-          Give feedback
+          GIVE US YOUR FEEDBACK
         </Button>
         <div className="flex gap-4 items-center ">
           {/* <DarkMode /> */}
