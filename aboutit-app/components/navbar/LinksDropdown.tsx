@@ -1,7 +1,11 @@
-import { DropdownMenu } from "../ui/dropdown-menu";
-import { DropdownMenuTrigger,DropdownMenuSeparator } from "../ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+} from "../ui/dropdown-menu";
 import { LuAlignLeft } from "react-icons/lu";
-
 import { Button } from "../ui/button";
 
 function LinksDropdown() {
@@ -12,8 +16,15 @@ function LinksDropdown() {
           <LuAlignLeft className="w-6 h-6" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuSeparator />
+      <DropdownMenuContent align="start" className="w-48">
+        <DropdownMenuItem>About</DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>Our Newsletter</DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>Contact Us</DropdownMenuItem>
+      </DropdownMenuContent>
     </DropdownMenu>
   );
 }
+
 export default LinksDropdown;
