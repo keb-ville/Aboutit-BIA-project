@@ -34,4 +34,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   );
 };
 
+/*
+Could we change it to
+As an emerging company, this is our first version of About It. We’d love to hear your feedback! You can share your thoughts anytime by clicking the 'GIVE US YOUR FEEDBACK' button. Let us know what you love, what could be improved, and what you'd like to see in future versions!
+
+OR
+
+This is just the beginning for About It, and we’re excited to grow with your input! Your feedback is invaluable to us. Please click the 'GIVE US YOUR FEEDBACK' button to share what you love, what could be better, and what you'd like to see in future versions.
+
+*/
 export default Modal;
