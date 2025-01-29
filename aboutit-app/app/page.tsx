@@ -4,6 +4,8 @@ import Image from "next/image";
 import { TextareaWithButton } from "../components/form/TextAreaInput";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Button } from "../components/ui/button";
+import Link from "next/link";
 
 function HomePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -59,6 +61,10 @@ function HomePage() {
         <TextareaWithButton />
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal} />
+
+      <Button className="w-1/3">
+        <Link href="/bia">Get Started</Link>
+      </Button>
     </div>
   );
 }
