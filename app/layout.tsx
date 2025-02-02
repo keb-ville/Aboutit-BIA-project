@@ -27,11 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <ClerkProvider>
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Navbar />
-        <main className="container py-10">{children}</main>
+        <main className="container py-10 flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
