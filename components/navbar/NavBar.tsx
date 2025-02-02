@@ -1,17 +1,16 @@
 import LinksDropdown from "./LinksDropdown";
-// import DarkMode from "./DarkMode";
+import FeedbackPopover from "./FeedbackPopover";
 import Logo from "./Logo";
-import { Button } from "../ui/button";
+
+import NavMenu from "./NavMenu";
 function Navbar() {
   return (
     <nav className="border-b">
       <div className="container flex flex-col sm:flex-row  sm:justify-between sm:items-center flex-wrap gap-4 py-6">
         <Logo />
-        <Button variant="default" size="lg" className="capitalize m-8 ml-auto">
-          GIVE US YOUR FEEDBACK
-        </Button>
+        <FeedbackPopover />
         <div className="flex gap-4 items-center ">
-          {/* <DarkMode /> */}
+          <NavMenu />
           <LinksDropdown />
         </div>
       </div>
