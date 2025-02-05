@@ -1,5 +1,6 @@
 import DataTablePage from "../../components/dataTable/DataTablePage";
 import Link from "next/link";
+import SupportingBeliefsData from "../../components/dataTable/SupportingBeliefs";
 function TrendingCfc() {
   return (
     <section>
@@ -34,8 +35,9 @@ function TrendingCfc() {
           </p>
         </div>
       </section>
+      <SupportingBeliefsData />
     </section>
   );
 }
-
+//DATA TABLE FOR SUPPORTING BELIEFS NEEDS CHANGING
 export default TrendingCfc;

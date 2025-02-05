@@ -40,7 +40,7 @@ export function DataTable<TData, TValue>({
                 {headerGroup.headers.map((header) => (
                   <TableHead
                     key={header.id}
-                    className="px-4 py-2 text-white-500"
+                    className="px-4 py-3 text-white-500"
                   >
                     {header.isPlaceholder
                       ? null
@@ -62,7 +62,7 @@ export function DataTable<TData, TValue>({
               table.getRowModel().rows.map((row) => (
                 <TableRow key={row.id} className="transition-colors">
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className="px-4 py-2 border-b">
+                    <TableCell key={cell.id} className="px-4 py-3 border-b">
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()
@@ -75,7 +75,7 @@ export function DataTable<TData, TValue>({
               <TableRow>
                 <TableCell
                   colSpan={columns.length}
-                  className="h-24 text-center text-gray-500"
+                  className="h-20 text-center text-gray-500"
                 >
                   No results found.
                 </TableCell>

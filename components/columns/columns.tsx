@@ -33,3 +33,35 @@ export const columns: ColumnDef<TableData>[] = [
     header: "Total members",
   },
 ];
+/////////SUPPORTING BELIEFS
+
+export type SupportingBeliefsData = {
+  beliefType: string;
+  strengthRating: string;
+  supportingBelief: string;
+  upvotes: number;
+  downvotes: number;
+};
+
+export const beliefsColumns: ColumnDef<SupportingBeliefsData>[] = [
+  {
+    accessorKey: "beliefType",
+    header: "Belief Type",
+  },
+  {
+    accessorKey: "strengthRating",
+    header: "Strength Rating",
+  },
+  {
+    accessorKey: "supportingBelief",
+    header: "Supporting Beliefs",
+  },
+  {
+    accessorKey: "upvotes",
+    header: "Upvotes",
+  },
+  {
+    accessorKey: "downvotes",
+    header: "Downvotes",
+  },
+];
