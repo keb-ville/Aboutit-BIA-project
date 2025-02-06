@@ -15,26 +15,30 @@ export const columns: ColumnDef<TableData>[] = [
   {
     accessorKey: "Trend",
     header: "Trend",
+    size: 50,
   },
   {
     accessorKey: "Rank",
     header: "Rank",
+    size: 50,
   },
   {
     accessorKey: "Top Trending Calls For Change",
     header: "Top Trending Calls For Change",
+    size: 400,
   },
   {
     accessorKey: "New members in the last 24 hours",
     header: "New members in the last 24 hours",
+    size: 100,
   },
   {
     accessorKey: "Total members",
     header: "Total members",
+    size: 100,
   },
 ];
 /////////SUPPORTING BELIEFS
-
 export type SupportingBeliefsData = {
   beliefType: string;
   strengthRating: string;
@@ -47,21 +51,26 @@ export const beliefsColumns: ColumnDef<SupportingBeliefsData>[] = [
   {
     accessorKey: "beliefType",
     header: "Belief Type",
+    size: 40,
   },
   {
     accessorKey: "strengthRating",
     header: "Strength Rating",
+    size: 70,
   },
   {
     accessorKey: "supportingBelief",
     header: "Supporting Beliefs",
+    size: 200,
   },
   {
     accessorKey: "upvotes",
     header: "Upvotes",
+    size: 40,
   },
   {
     accessorKey: "downvotes",
     header: "Downvotes",
+    size: 40,
   },
 ];

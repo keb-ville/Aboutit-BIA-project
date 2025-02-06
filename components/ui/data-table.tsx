@@ -30,60 +30,66 @@ export function DataTable<TData, TValue>({
     getCoreRowModel: getCoreRowModel(),
   });
 
+  const totalSize = columns.reduce(
+    (acc, column) => acc + (column.size || 0),
+    0
+  );
+
   return (
-    <div className="rounded-lg border shadow-lg overflow-hidden">
-      <div className="overflow-hidden">
-        <Table>
-          <TableHeader className="bg-green-700 text-white font-semibold">
-            {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id} className="hover:bg-transparent">
-                {headerGroup.headers.map((header) => (
-                  <TableHead
-                    key={header.id}
-                    className="px-4 py-3 text-white-500"
+    <div className="rounded-md border overflow-auto">
+      <Table className="border-collapse w-full">
+        <TableHeader className="bg-green-700 font-semibold">
+          {table.getHeaderGroups().map((headerGroup) => (
+            <TableRow key={headerGroup.id} className="divide-x">
+              {headerGroup.headers.map((header) => (
+                <TableHead
+                  key={header.id}
+                  className="bg-green-700 px-4 py-3 text-left font-medium text-white"
+                  style={{
+                    width: `${(header.column.getSize() / totalSize) * 100}%`,
+                  }}
+                >
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(
+                        header.column.columnDef.header,
+                        header.getContext()
+                      )}
+                </TableHead>
+              ))}
+            </TableRow>
+          ))}
+        </TableHeader>
+        <TableBody className="divide-y">
+          {table.getRowModel().rows?.length ? (
+            table.getRowModel().rows.map((row) => (
+              <TableRow
+                key={row.id}
+                data-state={row.getIsSelected() && "selected"}
+                className="divide-x"
+              >
+                {row.getVisibleCells().map((cell) => (
+                  <TableCell
+                    key={cell.id}
+                    className="px-4 py-2"
+                    style={{
+                      width: `${(cell.column.getSize() / totalSize) * 100}%`,
+                    }}
                   >
-                    {header.isPlaceholder
-                      ? null
-                      : flexRender(
-                          header.column.columnDef.header,
-                          header.getContext()
-                        )}
-                  </TableHead>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </TableCell>
                 ))}
               </TableRow>
-            ))}
-          </TableHeader>
-        </Table>
-      </div>
-      <div className="overflow-auto max-h-[400px]">
-        <Table>
-          <TableBody>
-            {table.getRowModel().rows?.length ? (
-              table.getRowModel().rows.map((row) => (
-                <TableRow key={row.id} className="transition-colors">
-                  {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className="px-4 py-3 border-b">
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext()
-                      )}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))
-            ) : (
-              <TableRow>
-                <TableCell
-                  colSpan={columns.length}
-                  className="h-20 text-center text-gray-500"
-                >
-                  No results found.
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </div>
+            ))
+          ) : (
+            <TableRow>
+              <TableCell colSpan={columns.length} className="h-24 text-center">
+                No results.
+              </TableCell>
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
     </div>
   );
 }
