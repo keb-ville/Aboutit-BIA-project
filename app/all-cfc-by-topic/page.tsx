@@ -68,7 +68,7 @@ export default function TopicsPage() {
           </select>
         </div>
 
-        <div className="grid grid-cols-6 gap-4 mt-8">
+        <div className="grid grid-cols-4 gap-20 mt-8">
           {Array.from({ length: 20 }).map((_, i) => (
             <div
               key={i}
