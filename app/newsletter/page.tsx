@@ -1,7 +1,11 @@
+import Link from "next/link";
+
 function Newsletter() {
   return (
     <div>
-      <h1>Newsletter</h1>
+      <Link href="https://susanleeatbia.substack.com/p/welcome-to-susan-lee-bia-18d?utm_campaign=post&utm_medium=web">
+        Newsletter
+      </Link>
     </div>
   );
 }

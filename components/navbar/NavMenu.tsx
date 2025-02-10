@@ -25,16 +25,16 @@ function NavMenu() {
                 </Link>
               </li>
               <li>
-                <Link href="/petitions" passHref legacyBehavior>
+                <Link href="/all-cfc-by-topic" passHref legacyBehavior>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Petitions
+                    Call for Change
                   </NavigationMenuLink>
                 </Link>
               </li>
               <li>
                 <Link href="/calls-for-change" passHref legacyBehavior>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Call for Change
+                    OTHER
                   </NavigationMenuLink>
                 </Link>
               </li>
