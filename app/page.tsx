@@ -57,9 +57,10 @@ function HomePage() {
         <span className="text-green-500">How</span> About It{" "}
         <span className="text-green-500">works</span>
       </h2>
-      <div className="w-3/4 lg:w-1/2 md:w-1/3">
+      {/* <div className="w-3/4 lg:w-1/2 md:w-1/3">
         <TextareaWithButton />
-      </div>
+      </div> */}
+      <Image src="/staticImage1.png" alt="image" width={450} height={450} />
       <Modal isOpen={isModalOpen} onClose={closeModal} />
 
       <Button className="w-1/3">
