@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="border-b bg-white">
       <div className="container flex flex-col sm:flex-row sm:justify-between sm:items-center flex-wrap gap-4 py-6">
         <Logo />
-        <div className="flex gap-6">
+        <div className="flex gap-24">
           <Link href="/about" className="text-black hover:text-green-600">
             About Us
           </Link>
@@ -23,7 +23,6 @@ function Navbar() {
         <FeedbackPopover />
         <div className="flex gap-4 items-center">
           <NavMenu />
-          {/* <LinksDropdown /> */}
         </div>
       </div>
     </nav>

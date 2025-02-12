@@ -14,7 +14,7 @@ function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Get Started</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="p-2 bg-white border rounded-md shadow-md min-w-[200px]">
               <li>
