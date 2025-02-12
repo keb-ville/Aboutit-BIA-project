@@ -141,7 +141,10 @@ export default function SupportingBeliefsPage() {
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4 italic">All Supporting Beliefs</h1>
+      <h1 className="text-3xl mt-10">
+        <span className="font-bold">All</span>{" "}
+        <span className="italic">Supporting Beliefs</span>
+      </h1>
 
       <p className="text-green-600 mb-6 text-lg">
         Description text with <span className="underline">Links</span>.

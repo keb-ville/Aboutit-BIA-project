@@ -11,8 +11,9 @@ export default function TopicsPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <main className="container mx-auto p-6">
-        <h1 className="text-2xl font-normal text-gray-900">
-          <span>All Calls for Change by Topic</span>
+        <h1 className="text-3xl mt-10">
+          <span className="font-bold">All</span>{" "}
+          <span className="italic">Calls for Change by Topic</span>
         </h1>
         <p className="text-green-700 mt-2">
           Description text with{" "}

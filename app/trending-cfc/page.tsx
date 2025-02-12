@@ -4,16 +4,19 @@ import SupportingBeliefsData from "../../components/dataTable/SupportingBeliefs"
 function TrendingCfc() {
   return (
     <section>
-      <Link href="/callsforchange" className="underline">
-        ← See All Calls for Change
+      <Link href="/calls-for-change-topic" className="underline">
+        ← See All Calls for Change by Topic
       </Link>
-      <h1 className="text-3xl mt-10">Trending Calls for Change</h1>
-      <p className="mt-10 mb-6 md:w-full">
-        Top 50 Trending Calls for Change on About it are tracked by number of
-        newly joining members in the last 24 hours. The rank is updated every
-        minute. The green arrow indicates the Call for Change moved up the rank
-        at the last update. The red arrow indicates it moved down. The black
-        line indicates no change in rank.
+      <h1 className="text-3xl mt-10">
+        <span className="font-bold">Trending</span>{" "}
+        <span className="italic">Calls for Change</span>
+      </h1>
+      <p className="mt-10 mb-6 md:w-full text-green-600">
+        Description text. Description text. Description text. Description text.
+        Description text. Description text. Description text. Description text.
+        Description text with Links. Description text with Links. Description
+        text with Links. Description text with Links. Description text with
+        Links. Description text with Links.
       </p>
       <DataTablePage />
       <section>
@@ -21,23 +24,22 @@ function TrendingCfc() {
           Top Supporting Beliefs
         </h1>
         <p className="mt-10 mb-6 md:w-full">
-          The Supporting Beliefs on About it that support the top 50 Trending
-          Calls for Change arranged by the total number of votes (upvotes and
-          downvotes combined)
+          Description text. Description text. Description text. Description
+          text. Description text. Description text. Description text.{" "}
+          <Link href="/about" className="underline">
+            Description text. Description text with Links. Description text with
+            Links.
+          </Link>
         </p>
         <div className="flex justify-between items-center mb-10">
           <Link href="/callsforchange" className="underline text-green-500">
-            ← See All Supporting Beliefs
+            ← See all Supporting Beliefs
           </Link>
-          <p className="text-sm">
-            Find out more about Supporting Beliefs at What are Supporting
-            Beliefs? on our About us (FAQs) page
-          </p>
         </div>
       </section>
       <SupportingBeliefsData />
     </section>
   );
 }
-//DATA TABLE FOR SUPPORTING BELIEFS NEEDS CHANGING
+
 export default TrendingCfc;

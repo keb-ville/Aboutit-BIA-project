@@ -2,6 +2,22 @@
 
 import type { ColumnDef } from "@tanstack/react-table";
 import { Icon } from "next/dist/lib/metadata/types/metadata-types";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
+const getArrowIcon = (rating: string) => {
+  if (rating.includes("Highly disputed") || rating.includes("Very weak"))
+    return <ArrowLeft className="w-8 h-8 text-red-600" />;
+  if (rating.includes("Weak"))
+    return <ArrowLeft className="w-8 h-8 text-orange-400" />;
+  if (rating.includes("Somewhat strong"))
+    return <ArrowRight className="w-8 h-8 text-yellow-400" />;
+  if (rating.includes("Mostly undisputed"))
+    return <ArrowRight className="w-8 h-8 text-green-400" />;
+  if (rating.includes("Very strong") || rating.includes("Undisputed"))
+    return <ArrowRight className="w-8 h-8 text-green-600" />;
+
+  return <ArrowRight className="w-8 h-8 text-gray-500" />; // Default neutral arrow
+};
 
 export type TableData = {
   Trend: Icon;
@@ -57,6 +73,15 @@ export const beliefsColumns: ColumnDef<SupportingBeliefsData>[] = [
     accessorKey: "strengthRating",
     header: "Strength Rating",
     size: 70,
+    cell: ({ row }) => {
+      const rating = row.getValue("strengthRating") as string;
+      return (
+        <div className="flex items-center gap-2">
+          {getArrowIcon(rating)}
+          <span>{rating}</span>
+        </div>
+      );
+    },
   },
   {
     accessorKey: "supportingBelief",

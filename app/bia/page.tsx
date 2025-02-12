@@ -1,7 +1,6 @@
 import Chatbox from "../../components/chat/ChatBox";
 import Link from "next/link";
 function SpeakToBiaPage() {
-  //need to work on the endpoints for the routes
   return (
     <div>
       <h2 className="flex justify-center text-lg">Speak to BIA</h2>
