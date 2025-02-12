@@ -16,7 +16,7 @@ const getArrowIcon = (rating: string) => {
   if (rating.includes("Very strong") || rating.includes("Undisputed"))
     return <ArrowRight className="w-8 h-8 text-green-600" />;
 
-  return <ArrowRight className="w-8 h-8 text-gray-500" />; // Default neutral arrow
+  return <ArrowRight className="w-8 h-8 text-gray-500" />;
 };
 
 export type TableData = {
@@ -54,7 +54,7 @@ export const columns: ColumnDef<TableData>[] = [
     size: 100,
   },
 ];
-/////////SUPPORTING BELIEFS
+
 export type SupportingBeliefsData = {
   beliefType: string;
   strengthRating: string;

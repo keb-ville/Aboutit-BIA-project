@@ -12,7 +12,7 @@ import {
   TableHeader,
   TableRow,
 } from "../../components/ui/table";
-
+import Link from "next/link";
 interface SupportingBelief {
   id: number;
   type: "F" | "O";
@@ -30,7 +30,7 @@ interface SupportingBelief {
 const initialData: SupportingBelief[] = [
   {
     id: 1,
-    type: "F",
+    type: "Factual",
     strengthRating: {
       label: "Highly disputed",
       score: 0,
@@ -44,7 +44,7 @@ const initialData: SupportingBelief[] = [
   },
   {
     id: 2,
-    type: "O",
+    type: "Opinion-based",
     strengthRating: {
       label: "Somewhat strong",
       score: 59,
@@ -58,7 +58,7 @@ const initialData: SupportingBelief[] = [
   },
   {
     id: 3,
-    type: "O",
+    type: "Opinion-based",
     strengthRating: {
       label: "Weak",
       score: 20,
@@ -72,7 +72,7 @@ const initialData: SupportingBelief[] = [
   },
   {
     id: 4,
-    type: "F",
+    type: "Factual",
     strengthRating: {
       label: "Undisputed",
       score: 99,
@@ -86,7 +86,7 @@ const initialData: SupportingBelief[] = [
   },
   {
     id: 5,
-    type: "O",
+    type: "Opinion-based",
     strengthRating: {
       label: "Very Weak",
       score: 3,
@@ -100,7 +100,7 @@ const initialData: SupportingBelief[] = [
   },
   {
     id: 6,
-    type: "F",
+    type: "Factual",
     strengthRating: {
       label: "Mostly undisputable",
       score: 70,
@@ -114,7 +114,7 @@ const initialData: SupportingBelief[] = [
   },
   {
     id: 7,
-    type: "O",
+    type: "Opinion-based",
     strengthRating: {
       label: "Very strong",
       score: 87,
@@ -126,7 +126,6 @@ const initialData: SupportingBelief[] = [
     baseVotes: 84,
     downvotes: 98,
   },
-  // Add more sample data as needed
 ];
 
 export default function SupportingBeliefsPage() {
@@ -146,12 +145,14 @@ export default function SupportingBeliefsPage() {
         <span className="italic">Supporting Beliefs</span>
       </h1>
 
-      <p className="text-green-600 mb-6 text-lg">
-        Description text with <span className="underline">Links</span>.
-        Description text with <span className="underline">Links</span>.
-        Description text with <span className="underline">Links</span>.{" "}
-        Description text with <span className="underline">Links</span>.
-        Description text with <span className="underline">Links</span>.
+      <p className="mt-10 mb-6 md:w-full text-green-600">
+        Description text. Description text. Description text. Description text.
+        Description text. Description text. Description text.{" "}
+        <Link href="/about" className="underline">
+          Description text with links. Description text with Links. Description
+          text with Links. Description text with Links. Description text with
+          Links. Description text with Links.
+        </Link>
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 mb-6">
