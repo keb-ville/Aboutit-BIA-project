@@ -63,7 +63,7 @@ function HomePage() {
       <Modal isOpen={isModalOpen} onClose={closeModal} />
 
       <Button className="w-1/3">
-        <Link href="/bia">Get Started</Link>
+        <Link href="/bia">Get started</Link>
       </Button>
     </div>
   );
