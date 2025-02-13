@@ -24,15 +24,48 @@ export default function FeedbackPopover() {
   const [feedback, setFeedback] = useState("");
   const [feedbackTopic, setFeedbackTopic] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
-    setFeedback("");
-    setName("");
-    setEmail("");
-    setFeedbackTopic("");
+    setIsSubmitting(true);
+
+    const formUrl =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdYexXngs7gnfsU9DCSbIGG6sS3cV1P8PeRnkYjQVPipRngDw/formResponse";
+
+    // Create URLSearchParams
+    const params = new URLSearchParams({
+      "entry.82099855": feedbackTopic,
+      "entry.1664844377": feedback,
+      "entry.321269941": name,
+      "entry.305150992": email,
+    });
+
+    // Construct the full URL with parameters
+    const submissionUrl = `${formUrl}?${params.toString()}`;
+
+    try {
+      console.log("Submitting to URL:", submissionUrl);
+
+      // Using fetch with GET method instead of POST
+      await fetch(submissionUrl, {
+        method: "GET",
+        mode: "no-cors",
+      });
+
+      // Show success message and clear form
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 5000);
+      setFeedback("");
+      setName("");
+      setEmail("");
+      setFeedbackTopic("");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error submitting your feedback. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -115,8 +148,12 @@ export default function FeedbackPopover() {
                 className="bg-white border"
               />
             </div>
-            <Button type="submit" className="w-full text-white">
-              Submit
+            <Button
+              type="submit"
+              className="w-full text-white"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Submitting..." : "Submit"}
             </Button>
           </form>
         )}

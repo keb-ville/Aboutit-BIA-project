@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import Link from "next/link";
 export default function TopicsPage() {
   const [search, setSearch] = useState("");
   const [order, setOrder] = useState("Alphabetical");
@@ -15,16 +15,13 @@ export default function TopicsPage() {
           <span className="font-bold">All</span>{" "}
           <span className="italic">Calls for Change by Topic</span>
         </h1>
-        <p className="text-green-700 mt-2">
-          Description text with{" "}
-          <a href="#" className="underline">
-            Links
-          </a>
-          . Description text with{" "}
-          <a href="#" className="underline">
-            Links
-          </a>
-          .
+        <p className="mt-10 mb-6 md:w-full text-green-600">
+          Description text. Description text. Description text. Description
+          text. Description text. Description text. Description text.{" "}
+          <Link href="/about" className="underline">
+            Description text. Description text with Links. Description text with
+            Links.
+          </Link>
         </p>
 
         <div className="flex mt-4">
