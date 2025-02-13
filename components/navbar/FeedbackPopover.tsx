@@ -10,11 +10,19 @@ import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../../components/ui/select";
 
 export default function FeedbackPopover() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [feedback, setFeedback] = useState("");
+  const [feedbackTopic, setFeedbackTopic] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -24,6 +32,7 @@ export default function FeedbackPopover() {
     setFeedback("");
     setName("");
     setEmail("");
+    setFeedbackTopic("");
   };
 
   return (
@@ -54,6 +63,26 @@ export default function FeedbackPopover() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-3">
+            <div>
+              <Label htmlFor="feedback-topic">This feedback is about:</Label>
+              <Select onValueChange={setFeedbackTopic}>
+                <SelectTrigger className="bg-white border">
+                  <SelectValue placeholder="Select an option" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="home">The Home page</SelectItem>
+                  <SelectItem value="bia">The Speak to Bia page</SelectItem>
+                  <SelectItem value="calls-for-change">
+                    Calls for Change
+                  </SelectItem>
+                  <SelectItem value="topics">Topics</SelectItem>
+                  <SelectItem value="supporting-beliefs">
+                    Supporting Beliefs
+                  </SelectItem>
+                  <SelectItem value="something-else">Something else</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
             <div>
               <Label htmlFor="feedback">Give us your feedback</Label>
               <Textarea
