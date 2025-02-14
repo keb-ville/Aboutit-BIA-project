@@ -12,7 +12,7 @@ interface CallForChange {
 }
 
 const voteData: VoteCount = {
-  upvotes: 3310,
+  upvotes: 3311,
   downvotes: 4356,
 };
 
@@ -42,7 +42,7 @@ export default function BeliefProfile() {
         href="/supporting-beliefs"
         className="text-green-600 hover:underline mb-8 block"
       >
-        See All Supporting Beliefs
+        See all Supporting Beliefs
       </Link>
 
       <div className="space-y-8">
@@ -83,9 +83,9 @@ export default function BeliefProfile() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="text-green-600 text-lg">
-                    Highly Disputed
+                    Highly disputed
                   </span>
-                  <span className="bg-red-500 p-1 text-white text-xs rounded-full">
+                  <span className="bg-white p-3 text-red-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
                     ←
                   </span>
                 </div>

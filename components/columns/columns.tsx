@@ -22,7 +22,7 @@ const getArrowIcon = (rating: string) => {
 export type TableData = {
   Trend: Icon;
   Rank: string;
-  "Top Trending Calls For Change": string;
+  "Top Trending Calls For Change": React.ReactNode;
   "New members in the last 24 hours": string;
   "Total members": string;
 };
@@ -41,6 +41,7 @@ export const columns: ColumnDef<TableData>[] = [
   {
     accessorKey: "Top Trending Calls For Change",
     header: "Top Trending Calls For Change",
+    cell: ({ row }) => row.original["Top Trending Calls For Change"],
     size: 400,
   },
   {
@@ -58,9 +59,9 @@ export const columns: ColumnDef<TableData>[] = [
 export type SupportingBeliefsData = {
   beliefType: string;
   strengthRating: string;
-  supportingBelief: string;
-  upvotes: number;
-  downvotes: number;
+  supportingBelief: React.ReactNode;
+  upvotes: string;
+  downvotes: string;
 };
 
 export const beliefsColumns: ColumnDef<SupportingBeliefsData>[] = [
@@ -86,6 +87,7 @@ export const beliefsColumns: ColumnDef<SupportingBeliefsData>[] = [
   {
     accessorKey: "supportingBelief",
     header: "Supporting Beliefs",
+    cell: ({ row }) => row.original["supportingBelief"],
     size: 200,
   },
   {

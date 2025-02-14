@@ -1,56 +1,110 @@
 import { beliefsColumns, SupportingBeliefsData } from "../columns/columns";
-
+import Link from "next/link";
 import { DataTable } from "../ui/data-table";
 
 const beliefsData: SupportingBeliefsData[] = [
   {
     beliefType: "Factual",
     strengthRating: "Highly disputed (0)",
-    supportingBelief: "Supporting Belief 1 Text...",
-    upvotes: 3311,
-    downvotes: 4356,
+    supportingBelief: (
+      <Link href="/supporting-beliefs/1">
+        <u>
+          Supporting Belief 1 Text. Supporting Belief 1 Text. Supporting Belief
+          1 Text. Supporting Belief 1 Text
+        </u>
+      </Link>
+    ),
+    upvotes: "3,311",
+    downvotes: "4,356",
   },
   {
     beliefType: "Opinion-based",
     strengthRating: "Somewhat strong (59)",
-    supportingBelief: "Supporting Belief 22 Text...",
-    upvotes: 2070,
-    downvotes: 231,
+    supportingBelief: (
+      <Link href="/supporting-beliefs/1">
+        <u>
+          Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting
+          Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text.
+          Supporting Belief 22 Text. Supporting Belief 22 Text.
+        </u>
+      </Link>
+    ),
+    upvotes: "2,070",
+    downvotes: "231",
   },
   {
     beliefType: "Opinion-based",
     strengthRating: "Weak (20)",
-    supportingBelief: "Supporting Belief 23 Text...",
-    upvotes: 153,
-    downvotes: 1445,
+    supportingBelief: (
+      <Link href="/supporting-beliefs/1">
+        <u>
+          Supporting Belief 23 Text. Supporting Belief 23 Text. Supporting
+          Belief 23 Text. Supporting Belief 23 Text.
+        </u>
+      </Link>
+    ),
+    upvotes: "153",
+    downvotes: "1,445",
   },
   {
     beliefType: "Factual",
     strengthRating: "Undisputed (99)",
-    supportingBelief: "Supporting Belief 4 Text...",
-    upvotes: 544,
-    downvotes: 143,
+    supportingBelief: (
+      <Link href="/supporting-beliefs/1">
+        <u>
+          Supporting Belief 4 Text. Supporting Belief 4 Text. Supporting Belief
+          4 Text.
+        </u>
+      </Link>
+    ),
+    upvotes: "544",
+    downvotes: "143",
   },
   {
     beliefType: "Opinion-based",
     strengthRating: "Very weak (3)",
-    supportingBelief: "Supporting Belief 18 Text...",
-    upvotes: 124,
-    downvotes: 450,
+    supportingBelief: (
+      <Link href="/supporting-beliefs/1">
+        <u>
+          Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting
+          Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text.
+          Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting
+          Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text.
+        </u>
+      </Link>
+    ),
+    upvotes: "124",
+    downvotes: "450",
   },
   {
     beliefType: "Factual",
     strengthRating: "Mostly undisputed (70)",
-    supportingBelief: "Supporting Belief 6 Text...",
-    upvotes: 114,
-    downvotes: 230,
+    supportingBelief: (
+      <Link href="/supporting-beliefs/1">
+        <u>
+          Supporting Belief 6 Text. Supporting Belief 6 Text. Supporting Belief
+          6 Text.
+        </u>
+      </Link>
+    ),
+    upvotes: "114",
+    downvotes: "230",
   },
   {
     beliefType: "Opinion-based",
     strengthRating: "Very strong (87)",
-    supportingBelief: "Supporting Belief 17 Text...",
-    upvotes: 84,
-    downvotes: 98,
+    supportingBelief: (
+      <Link href="/supporting-beliefs/1">
+        <u>
+          Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting
+          Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text.
+          Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting
+          Belief 17 Text. Supporting Belief 17 Text.
+        </u>
+      </Link>
+    ),
+    upvotes: "84",
+    downvotes: "98",
   },
 ];
 

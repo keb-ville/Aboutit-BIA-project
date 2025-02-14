@@ -15,7 +15,7 @@ import {
 import Link from "next/link";
 interface SupportingBelief {
   id: number;
-  type: "F" | "O";
+  type: "Factual" | "Opinion-based";
   strengthRating: {
     label: string;
     score: number;
@@ -50,7 +50,7 @@ const initialData: SupportingBelief[] = [
       score: 59,
     },
     description:
-      "Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text.",
+      "Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text.",
     totalVotes: 2301,
     verifications: [false],
     baseVotes: 2070,
@@ -92,7 +92,7 @@ const initialData: SupportingBelief[] = [
       score: 3,
     },
     description:
-      "Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text.",
+      "Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text.",
     totalVotes: 574,
     verifications: [true, true],
     baseVotes: 124,
@@ -120,7 +120,7 @@ const initialData: SupportingBelief[] = [
       score: 87,
     },
     description:
-      "Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text.",
+      "Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text.",
     totalVotes: 182,
     verifications: [true, true],
     baseVotes: 84,
