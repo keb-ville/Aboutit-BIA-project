@@ -9,7 +9,7 @@ export default function TopicPage() {
   return (
     <div className="container mx-auto p-6">
       <nav className="flex justify-between items-center mb-6">
-        <Link href="/all-cfc-by-topic" className="underline">
+        <Link href="/all-cfc-by-topic" className="underline text-green-600">
           ← See all Topics
         </Link>
         <div className="space-x-4">
@@ -19,14 +19,14 @@ export default function TopicPage() {
         </div>
       </nav>
 
-      <h1 className="text-green-600 text-xl font-bold">Topic</h1>
+      <h1 className="text-green-600 text-2xl font-bold mb-6">Topic</h1>
       {/* <h1 className="text-3xl font-bold">TOPIC {id}</h1> */}
-      <h1 className="text-3xl font-bold">TOPIC 8</h1>
-      <h3 className="text-sm mt-4 font-semibold text-gray-700">Profile</h3>
+      <h1 className="text-2xl font-bold">TOPIC 8</h1>
+      <h3 className="text-xl mt-4 font-semibold text-green-600">Profile</h3>
 
       <div className="border-t border-b py-4 my-4">
-        <p className="font-bold mb-4">Subject</p>
-        <ul className="list-disc pl-4 text-gray-700 text-sm">
+        <p className="font-bold mb-4 text-2xl pl-6">Subject</p>
+        <ul className="list-disc pl-40 text-gray-700 text-sm pl-20">
           <li>
             <strong>Description Text</strong>
           </li>
@@ -43,19 +43,25 @@ export default function TopicPage() {
         </ul>
       </div>
 
-      <div className="py-4">
-        <p className="font-bold mb-4">Features</p>
-        <p>
+      <div className="py-4 mb-4">
+        <p className="font-bold mb-4 text-2xl pl-6">Features</p>
+        <p className="pl-40 text-lg">
+          {" "}
+          {/* Increased font size by 50% */}
           There is <span className="font-bold text-green-600">1</span> Call for
           Change in this Topic.
         </p>
-        <p>
+        <p className="pl-40 text-lg">
+          {" "}
+          {/* Increased font size by 50% */}
           There are <span className="font-bold text-green-600">1,034</span>{" "}
           members who are part of <em>Calls for Change</em> in this Topic.
         </p>
       </div>
-      <h1 className="mt-4 font-bold mb-4 text-2xl">
-        Calls for Change <span className="text-green-600 mr-1">in</span> TOPIC 8
+      <h1 className="text-3xl mt-10">
+        <span className="font-bold italic">Calls for Change</span>{" "}
+        <span className="text-green-600">in</span>
+        <span className="font-bold"> TOPIC 8</span>
       </h1>
       <div className="bg-gray-100 p-4 rounded-lg shadow-md">
         <input
