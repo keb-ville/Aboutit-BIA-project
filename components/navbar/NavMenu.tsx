@@ -64,7 +64,7 @@ function NavMenu() {
                 </CollapsibleTrigger>
                 <CollapsibleContent className="ml-4 mt-1">
                   <Link
-                    href="/calls-for-change/trending"
+                    href="/trending-cfc"
                     className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
                     onClick={() => {
                       setIsOpen(false);
@@ -74,7 +74,7 @@ function NavMenu() {
                     Trending Calls for Change
                   </Link>
                   <Link
-                    href="/calls-for-change/by-topic"
+                    href="/calls-for-change-topic"
                     className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
                     onClick={() => {
                       setIsOpen(false);
@@ -84,7 +84,7 @@ function NavMenu() {
                     All Calls for Change by Topic
                   </Link>
                   <Link
-                    href="/calls-for-change/create"
+                    href="/campaign"
                     className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
                     onClick={() => {
                       setIsOpen(false);
