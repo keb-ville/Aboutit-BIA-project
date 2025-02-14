@@ -1,11 +1,9 @@
 "use client";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+
 //http://localhost:3000/topic-profile/1
 
 export default function TopicPage() {
-  const { id } = useParams(); // Get topic ID from URL
-
   return (
     <div className="container mx-auto p-6">
       <nav className="flex justify-between items-center mb-6">
@@ -20,7 +18,6 @@ export default function TopicPage() {
       </nav>
 
       <h1 className="text-green-600 text-2xl font-bold mb-6">Topic</h1>
-      {/* <h1 className="text-3xl font-bold">TOPIC {id}</h1> */}
       <h1 className="text-2xl font-bold">TOPIC 8</h1>
       <h3 className="text-xl mt-4 font-semibold text-green-600">Profile</h3>
 
