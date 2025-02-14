@@ -40,7 +40,7 @@ export default function BeliefProfile() {
     <div className="max-w-4xl mx-auto p-6">
       <Link
         href="/supporting-beliefs"
-        className="text-green-600 hover:underline mb-8 block"
+        className="text-green-600 underline mb-8 block"
       >
         See all Supporting Beliefs
       </Link>
@@ -57,23 +57,27 @@ export default function BeliefProfile() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-8">
             <section>
-              <h2 className="text-2xl font-bold mb-4">Profile</h2>
+              <h2 className="text-2xl text-green-500 font-bold mb-4">
+                Profile
+              </h2>
 
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-xl font-bold">Belief Type</h3>
-                  <p className="text-green-600 text-lg">Factual</p>
-                  <p className="text-sm">
-                    Find out more about Belief Types at{" "}
-                    <Link href="/faq#belief-types" className="underline">
-                      What are Belief Types?
-                    </Link>{" "}
-                    on our{" "}
-                    <Link href="/faq" className="underline">
-                      About us (FAQs)
-                    </Link>{" "}
-                    page
-                  </p>
+              <div className=" border border-black p-4 rounded-lg">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Belief Type</h3>
+                    <p className="text-sm">
+                      Find out more about Belief Types at{" "}
+                      <Link href="/about" className="underline">
+                        What are Belief Types?
+                      </Link>{" "}
+                      on our{" "}
+                      <Link href="/about" className="underline">
+                        About us (FAQs)
+                      </Link>{" "}
+                      page
+                    </p>
+                  </div>
+                  <p className="text-green-600 text-lg ml-4">Factual</p>
                 </div>
               </div>
             </section>
@@ -82,32 +86,41 @@ export default function BeliefProfile() {
               <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-green-600 text-lg">
+                  <span className="text-green-700 text-lg">
                     Highly disputed
                   </span>
                   <span className="bg-white p-3 text-red-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
                     ←
                   </span>
                 </div>
-                <div className="text-green-600">(Score: 0)</div>
+                <div className="text-green-700">(Score: 0)</div>
 
-                <div className="h-2 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 rounded-full mt-4" />
+                <div className="w-full max-w-md mx-auto">
+                  <div className="flex h-2 mt-4">
+                    <div className="w-1/5 bg-red-500 rounded-l-full" />
+                    <div className="w-1/5 bg-orange-500" />
+                    <div className="w-1/5 bg-yellow-500" />
+                    <div className="w-1/5 bg-lime-500" />
+                    <div className="w-1/5 bg-green-500 rounded-r-full" />
+                  </div>
 
-                <div className="flex justify-between text-sm mt-2">
-                  <span>Highly disputed</span>
-                  <span>Moderately disputed</span>
-                  <span>Sometimes disputed</span>
-                  <span>Mostly undisputed</span>
-                  <span>Undisputed</span>
+                  <div className="flex justify-between text-xs mt-2">
+                    <span className="text-center w-1/5">Highly disputed</span>
+                    <span className="text-center w-1/5">
+                      Moderately disputed
+                    </span>
+                    <span className="text-center w-1/5">
+                      Sometimes disputed
+                    </span>
+                    <span className="text-center w-1/5">Mostly undisputed</span>
+                    <span className="text-center w-1/5">Undisputed</span>
+                  </div>
                 </div>
 
                 <p className="text-sm mt-4">
                   Factual Supporting Beliefs are given their Strength Ratings
                   from the{" "}
-                  <Link
-                    href="/disputability"
-                    className="text-red-600 underline"
-                  >
+                  <Link href="/about" className="text-red-600 underline">
                     Disputability
                   </Link>{" "}
                   scale. The Disputability scale ranges from Highly disputed to
@@ -145,11 +158,11 @@ export default function BeliefProfile() {
             </div>
             <div className="text-center mt-4 text-sm">
               Find out more about{" "}
-              <Link href="/faq#voting" className="underline">
+              <Link href="/about" className="underline">
                 What does it mean to cast your vote?
               </Link>{" "}
               on our{" "}
-              <Link href="/faq" className="underline">
+              <Link href="/about" className="underline">
                 About us (FAQs)
               </Link>{" "}
               page
@@ -158,7 +171,7 @@ export default function BeliefProfile() {
         </div>
 
         <section className="space-y-4">
-          <div className="text-green-600">
+          <div className="text-green-700">
             <p className="mb-4">
               <strong>Mostly undisputed</strong> means Description Text
               Description Text Description Text Description Text Description
@@ -197,8 +210,8 @@ export default function BeliefProfile() {
             {callsForChange.map((call) => (
               <li key={call.id}>
                 <Link
-                  href={`/calls-for-change/${call.id}`}
-                  className="text-green-600 hover:underline"
+                  href={`/topic-profile/1/cfc-profile`}
+                  className="text-green-500 underline"
                 >
                   {call.text}
                 </Link>
