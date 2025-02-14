@@ -20,7 +20,8 @@ export default function TopicPage() {
       </nav>
 
       <h1 className="text-green-600 text-xl font-bold">Topic</h1>
-      <h1 className="text-3xl font-bold">TOPIC {id}</h1>
+      {/* <h1 className="text-3xl font-bold">TOPIC {id}</h1> */}
+      <h1 className="text-3xl font-bold">TOPIC 8</h1>
       <h3 className="text-sm mt-4 font-semibold text-gray-700">Profile</h3>
 
       <div className="border-t border-b py-4 my-4">
@@ -49,7 +50,7 @@ export default function TopicPage() {
           Change in this Topic.
         </p>
         <p>
-          There are <span className="font-bold text-green-600">11,304</span>{" "}
+          There are <span className="font-bold text-green-600">1,034</span>{" "}
           members who are part of <em>Calls for Change</em> in this Topic.
         </p>
       </div>
