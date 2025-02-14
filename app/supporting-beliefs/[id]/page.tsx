@@ -57,7 +57,7 @@ export default function BeliefProfile() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-8">
             <section>
-              <h2 className="text-2xl text-green-500 font-bold mb-4">
+              <h2 className="text-2xl text-green-600 font-bold mb-4">
                 Profile
               </h2>
 
@@ -86,14 +86,14 @@ export default function BeliefProfile() {
               <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-green-700 text-lg">
+                  <span className="text-green-600 text-lg">
                     Highly disputed
                   </span>
                   <span className="bg-white p-3 text-red-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
                     ←
                   </span>
                 </div>
-                <div className="text-green-700">(Score: 0)</div>
+                <div className="text-green-600">(Score: 0)</div>
 
                 <div className="w-full max-w-md mx-auto">
                   <div className="flex h-2 mt-4">
@@ -171,7 +171,7 @@ export default function BeliefProfile() {
         </div>
 
         <section className="space-y-4">
-          <div className="text-green-700">
+          <div className="text-green-600">
             <p className="mb-4">
               <strong>Mostly undisputed</strong> means Description Text
               Description Text Description Text Description Text Description
