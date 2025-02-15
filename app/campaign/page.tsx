@@ -223,7 +223,6 @@ export default function CampaignsPage() {
             </section>
           </div>
 
-          {/* Sidebar */}
           <div className="space-y-4">
             <Card className="p-4">
               <h3 className="mb-2 font-semibold">Call for Change snapshot</h3>
@@ -239,7 +238,7 @@ export default function CampaignsPage() {
                 </div>
                 <div>
                   <p className="text-sm">Soundness score</p>
-                  {/* <Progress value={62} className="h-2" /> */}
+        
                   <p className="text-right text-sm">62</p>
                 </div>
                 <div>
