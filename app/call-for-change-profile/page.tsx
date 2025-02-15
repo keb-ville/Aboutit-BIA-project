@@ -20,7 +20,10 @@ const CallForChangePage = () => {
           4 Text. Call for Change 4 Text. Call for Change 4 Text. Call for
           Change 4 Text.
         </p>
-        <p className="mt-8">🔥Trending Rank #3</p>
+        <p className="mt-8 mb-4">🔥Trending Rank #3</p>
+        <Link href="/trending-cfc" className="underline text-green-600">
+          ← See all <span className="italic">Trending Calls for Change</span>
+        </Link>
         <button
           className="mt-10 bg-green-600 text-white px-6 py-2 rounded-md mx-auto block"
           onClick={() => router.push("/campaign")}
@@ -28,25 +31,63 @@ const CallForChangePage = () => {
           Join this Call for Change
         </button>
 
-        <section className="mt-6 border p-4 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold">Profile</h3>
-          <p className="mt-2">
-            This <span className="font-bold">Call for Change</span> is supported
+        {/* <section className="mt-6 border p-4 rounded-lg shadow-md">
+          <h3 className="text-xl font-semibold text-green-600">Profile</h3>
+          <p className="mt-2 mb-2">
+            This <span className="italic">Call for Change</span> is supported
             by:
           </p>
-          <ul className="list-disc ml-6 text-green-600">
-            <li>2 Factual Supporting Beliefs</li>
-            <li>1 Opinion-based Supporting Belief</li>
+          <ul className="ml-6 text-green-600 underline list-none">
+            <li>
+              <span className="font-bold">2</span> Factual Supporting Beliefs
+            </li>
+            <li>
+              <span className="font-bold">1</span> Opinion-based Supporting
+              Belief
+            </li>
           </ul>
-        </section>
+        </section> */}
 
-        <section className="mt-6 border p-4 bg-lime-500 text-white rounded-lg shadow-md">
+        {/* <section className="mt-6 border p-4 bg-lime-500 text-white rounded-lg shadow-md">
           <h3 className="text-xl font-semibold">Soundness Score</h3>
           <p className="text-5xl font-bold">62</p>
           <p className="mt-2 text-sm">
             A Soundness score of 62 is considered descriptive. The average
             Soundness score of all Calls for Change within this topic is XX.
           </p>
+        </section> */}
+        <section className="mt-6 border p-4 rounded-lg shadow-md">
+          <h3 className="text-xl font-semibold text-green-600">Profile</h3>
+          <div className="flex">
+            <h4 className="font-bold mr-4">Supporting Beliefs</h4>
+            <div>
+              <p className="mt-2 mb-2">
+                This <span className="italic">Call for Change</span> is
+                supported by:
+              </p>
+              <ul className="text-green-600 underline list-none">
+                <li>
+                  <span className="font-bold">2</span> Factual Supporting
+                  Beliefs
+                </li>
+                <li>
+                  <span className="font-bold">1</span> Opinion-based Supporting
+                  Belief
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-6 border p-4 bg-lime-500 text-white rounded-lg shadow-md">
+          <div className="ml-4">
+            <h3 className="text-xl font-semibold">Soundness Score</h3>
+            <p className="text-5xl font-bold">62</p>
+            <p className="mt-2 text-sm">
+              A Soundness score of 62 is considered descriptive. The average
+              Soundness score of all Calls for Change within this topic is XX.
+            </p>
+          </div>
         </section>
 
         <section className="mt-6 border p-4 rounded-lg shadow-md">
