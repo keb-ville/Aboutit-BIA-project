@@ -25,47 +25,25 @@ const CallForChangePage = () => {
           ← See all <span className="italic">Trending Calls for Change</span>
         </Link>
         <button
-          className="mt-10 bg-green-600 text-white px-6 py-2 rounded-md mx-auto block"
+          className="mt-10 bg-green-600 text-white px-6 py-2 rounded-md mx-auto block border-black border-2"
           onClick={() => router.push("/campaign")}
         >
           Join this Call for Change
         </button>
 
-        {/* <section className="mt-6 border p-4 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold text-green-600">Profile</h3>
-          <p className="mt-2 mb-2">
-            This <span className="italic">Call for Change</span> is supported
-            by:
-          </p>
-          <ul className="ml-6 text-green-600 underline list-none">
-            <li>
-              <span className="font-bold">2</span> Factual Supporting Beliefs
-            </li>
-            <li>
-              <span className="font-bold">1</span> Opinion-based Supporting
-              Belief
-            </li>
-          </ul>
-        </section> */}
-
-        {/* <section className="mt-6 border p-4 bg-lime-500 text-white rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold">Soundness Score</h3>
-          <p className="text-5xl font-bold">62</p>
-          <p className="mt-2 text-sm">
-            A Soundness score of 62 is considered descriptive. The average
-            Soundness score of all Calls for Change within this topic is XX.
-          </p>
-        </section> */}
+        <h3 className="text-xl font-semibold text-green-600">Profile</h3>
         <section className="mt-6 border p-4 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold text-green-600">Profile</h3>
           <div className="flex">
-            <h4 className="font-bold mr-4">Supporting Beliefs</h4>
+            <h4 className="text-2xl font-bold leading-tight text-black">
+              Supporting
+              <br /> Beliefs
+            </h4>
             <div>
-              <p className="mt-2 mb-2">
+              <p className="mt-2 mb-2 m-10">
                 This <span className="italic">Call for Change</span> is
                 supported by:
               </p>
-              <ul className="text-green-600 underline list-none">
+              <ul className="text-green-600 underline list-none m-10">
                 <li>
                   <span className="font-bold">2</span> Factual Supporting
                   Beliefs
@@ -79,47 +57,133 @@ const CallForChangePage = () => {
           </div>
         </section>
 
-        <section className="mt-6 border p-4 bg-lime-500 text-white rounded-lg shadow-md">
-          <div className="ml-4">
-            <h3 className="text-xl font-semibold">Soundness Score</h3>
-            <p className="text-5xl font-bold">62</p>
-            <p className="mt-2 text-sm">
-              A Soundness score of 62 is considered descriptive. The average
-              Soundness score of all Calls for Change within this topic is XX.
+        <section className="mt-6 flex items-stretch rounded-lg bg-white shadow-md">
+          <div className="flex w-48 flex-col justify-start p-4">
+            <h3 className="text-2xl font-bold leading-tight text-black">
+              Soundness
+              <br />
+              score
+            </h3>
+            <div className="mt-2 space-y-2 text-sm">
+              <p className="italic">A Call for Change</p>
+              <p>
+                Soundness score is determined by calculating the average of all
+                its Supporting Beliefs' strength ratings. Find out more about{" "}
+                <a className="italic hover:text-gray-600">Call for Change</a>{" "}
+                Soundness Score at{" "}
+                <a href="/about" className="underline hover:text-gray-600">
+                  What is a Call for Change Soundness Score?
+                </a>{" "}
+                on our{" "}
+                <a href="/about" className="underline hover:text-gray-600">
+                  About us (FAQs)
+                </a>{" "}
+                page.
+              </p>
+            </div>
+          </div>
+          <div className="flex-1 rounded-r-lg bg-[#a4d233] p-4 text-white">
+            <div className="text-[72px] font-bold leading-none">62</div>
+            <p className="mt-3 text-base leading-relaxed">
+              A Soundness score of 62 is considered Description Text Description
+              Text Description Text Description Text Description Text
+              Description Text Description Text Description Text Description
+              Text Description Text Description Text Description Text.
+              <section className="mt-20">
+                <p>
+                  The average Soundness score of all{" "}
+                  <span className="italic">Calls for Change</span> within this
+                  Topic is XX.
+                </p>
+              </section>
             </p>
           </div>
         </section>
 
         <section className="mt-6 border p-4 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold">Members</h3>
-          <p className="text-lg font-bold">1,034 members</p>
-          <p className="mt-1">X joined in the last day</p>
-          <p>Y joined in the last week</p>
-          <p>Z joined in the last month</p>
+          <div className="flex">
+            <h4 className="text-2xl font-bold leading-tight text-black">
+              Members
+            </h4>
+            <div>
+              <p className="mt-2 mb-2 m-10">
+                <span className="text-green-600 underline text-2xl">
+                  1,034{" "}
+                </span>{" "}
+                members are part of this
+                <span className="italic"> Call for Change</span>
+              </p>
+              <ul className="text-black list-none m-10">
+                <li>
+                  <span className="italic">X</span> joined in the last day
+                </li>
+                <li>
+                  <span className="italic">Y</span> joined in the last week
+                </li>
+                <li>
+                  <span className="italic">Z</span> joined in the last month
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
-
         <button
-          className="mt-4 bg-green-600 text-white px-6 py-2 rounded-md mx-auto block"
+          className="mt-4 bg-green-600 text-white px-6 py-2 rounded-md mx-auto block border-black border-2"
           onClick={() => router.push("/campaign")}
         >
           Join this Call for Change
         </button>
+        <section className="flex justify-center">
+          <p className="text-sm mt-10">
+            Find out more about what it means to join a Call for Change at{" "}
+            <a href="/about" className="italic underline hover:text-gray-600">
+              What does it mean to join a Call for Change?
+            </a>{" "}
+            on our{" "}
+            <a href="/about" className="underline hover:text-gray-600">
+              About us (FAQs)
+            </a>{" "}
+            page
+          </p>
+        </section>
 
         <section className="mt-6 border p-4 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold">Topics</h3>
-          <ul className="list-disc ml-6 underline list-none">
-            <li>TOPIC 8</li>
-            <li>TOPIC 21</li>
-            <li>TOPIC 23</li>
-          </ul>
-          <h3 className="text-xl font-semibold mt-4">Related Search Terms</h3>
-          <p className="underline">
-            #cfc_4_ search_term_1 ; #cfc_4_ search_term_2 #cfc_4_ search_term_3
-            ; #cfc_4_ search_term_4 ; #cfc_4_ search_term_5
-          </p>
-          <div className="flex items-center gap-8 mt-4">
-            <h3 className="text-xl font-semibold">Date created</h3>
-            <p className="text-xl font-normal">DD Month YYYY</p>
+          <div className="flex">
+            <h4 className="text-2xl font-bold leading-tight text-black">
+              Topics
+            </h4>
+            <div>
+              <ul className="text-black list-none m-10 underline">
+                <li>TOPIC 8</li>
+                <li>TOPIC 21</li>
+                <li>TOPIC 23</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-6 border p-4 rounded-lg shadow-md">
+          <div className="flex">
+            <h4 className="text-2xl font-bold leading-tight text-black">
+              Related <br />
+              Search Terms
+            </h4>
+            <div>
+              <p className="text-black list-none m-10 underline">
+                #cfc_4_ search_term_1 ; #cfc_4_ search_term_2 #cfc_4_
+                search_term_3 ; #cfc_4_ search_term_4 ; #cfc_4_ search_term_5
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="mt-6 border p-4 rounded-lg shadow-md">
+          <div className="flex">
+            <h4 className="text-2xl font-bold leading-tight text-black">
+              Date created
+            </h4>
+            <div>
+              <p className="text-black list-none m-10">DD Month YYYY</p>
+            </div>
           </div>
         </section>
       </main>
@@ -131,10 +195,15 @@ const CallForChangePage = () => {
         <p className="mt-2">
           Call for Change Logic Strings are made up of at least one Factual
           Supporting Belief and one Opinion-based Supporting Belief. Find out
-          more about Call for Change Logic Strings at{" "}
-          <span className="underline italic">
-            What are Call for Change Logic Strings?
-          </span>{" "}
+          more about <span className="italic">Call for Change</span> Logic
+          Strings at{" "}
+          <Link href="/about">
+            <span className="underline italic">
+              What are{" "}
+              <span className="underline not-italic">Call for Change</span>{" "}
+              Logic Strings?
+            </span>{" "}
+          </Link>
           on our{" "}
           <a href="/about" className="underline">
             About us (FAQs) page
