@@ -7,7 +7,7 @@ const CallForChangePage = () => {
   const router = useRouter();
   return (
     <div>
-      <Link href="/all-cfc-by-topic" className="underline text-green-600">
+      <Link href="/calls-for-change-topic" className="underline text-green-600">
         ← See all <span className="italic">Calls for Change</span> by Topic
       </Link>
       <main className="mt-6">
@@ -68,7 +68,8 @@ const CallForChangePage = () => {
               <p className="italic">A Call for Change</p>
               <p>
                 Soundness score is determined by calculating the average of all
-                its Supporting Beliefs' strength ratings. Find out more about{" "}
+                its Supporting Beliefs&apos; strength ratings. Find out more
+                about{" "}
                 <a className="italic hover:text-gray-600">Call for Change</a>{" "}
                 Soundness Score at{" "}
                 <a href="/about" className="underline hover:text-gray-600">
@@ -154,7 +155,9 @@ const CallForChangePage = () => {
             </h4>
             <div>
               <ul className="text-black list-none m-10 underline">
-                <li>TOPIC 8</li>
+                <li>
+                  <a href="/calls-for-change-topic/1">TOPIC 8</a>
+                </li>
                 <li>TOPIC 21</li>
                 <li>TOPIC 23</li>
               </ul>
@@ -187,7 +190,6 @@ const CallForChangePage = () => {
           </div>
         </section>
       </main>
-
       <section className="mt-10 p-6 bg-yellow-100 rounded-lg shadow-md">
         <h3 className="text-2xl font-semibold">
           <span className="italic">Call for Change </span>Logic String
@@ -215,77 +217,94 @@ const CallForChangePage = () => {
           <div className="p-4 bg-white shadow-md">
             <h4 className="text-lg font-semibold">FACTUAL</h4>
           </div>
-          <div className="p-4 text-green-600 underline">
-            Supporting Belief 1 Text. Supporting Belief 1 Text. Supporting
-            Belief 1 Text. Supporting Belief 1 Text.
+          <div className="p-4 text-green-600 underline font-bold text-xl">
+            <Link href="/supporting-beliefs/1">
+              Supporting Belief 1 Text. Supporting Belief 1 Text. Supporting
+              Belief 1 Text. Supporting Belief 1 Text.
+            </Link>
           </div>
-          <div className="p-4 bg-red-500 text-white shadow-md">
+          <div className="p-4 bg-red-500 text-white shadow-md font-bold">
             <p>Highly Disputed (0)</p>
           </div>
         </div>
-        <p className="text-center text-xl font-bold">+</p>
+
+        <p className="text-center text-4xl font-bold">+</p>
+
         <div className="mt-4 grid grid-cols-3 gap-4">
           <div className="p-4 bg-white shadow-md">
             <h4 className="text-lg font-semibold">FACTUAL</h4>
           </div>
-          <div className="p-4 text-green-600 underline">
+          <div className="p-4 text-green-600 underline font-bold text-xl">
             Supporting Belief 4 Text. Supporting Belief 4 Text. Supporting
             Belief 4 Text.
           </div>
-          <div className="p-4 bg-green-500 text-white shadow-md">
+          <div className="p-4 bg-green-500 text-white shadow-md font-bold">
             <p>Undisputed (99)</p>
           </div>
         </div>
-        <p className="text-center text-xl font-bold">+</p>
+
+        <p className="text-center text-4xl font-bold">+</p>
+
         <div className="mt-4 grid grid-cols-3 gap-4">
           <div className="p-4 bg-white shadow-md">
             <h4 className="text-lg font-semibold">OPINION-BASED</h4>
           </div>
-          <div className="p-4 text-green-600 underline">
+          <div className="p-4 text-green-600 underline font-bold text-xl">
             Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting
             Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17
             Text. Supporting Belief 17 Text. Supporting Belief 17 Text.
             Supporting Belief 17 Text. Supporting Belief 17 Text.
           </div>
-          <div className="p-4 bg-green-700 text-white shadow-md">
+          <div className="p-4 bg-green-500 text-white shadow-md font-bold">
             <p>Very Strong (87)</p>
           </div>
         </div>
-        <p className="text-center text-xl font-bold">=</p>
+
+        <p className="text-center text-4xl font-bold">=</p>
+
         <div className="mt-4 grid grid-cols-3 gap-4">
           <div className="p-4 bg-white shadow-md">
             <h3 className="text-2xl font-semibold mt-6 text-green-600">
               Call for Change
             </h3>
           </div>
-          <div className="p-4 text-black">
+          <div className="p-4 text-black font-bold text-xl">
             Call for Change 4 Text. Call for Change 4 Text. Call for Change 4
-            Text. Call for Change 4 Text.
+            Text. Call for Change 4 Text. Call for Change 4 Text. Call for
+            Change 4 Text. Call for Change 4 Text. Call for Change 4 Text. Call
+            for Change 4 Text.
           </div>
-          <div className="flex">
-            <div className="p-6 bg-black text-white flex justify-center items-center w-30 h-30">
+          <div className="flex w-full">
+            <div className="p-6 bg-black text-white flex justify-center items-center w-1/2 h-30">
               <h3 className="text-1xl font-semibold">
                 Call for Change Soundness Score:
               </h3>
             </div>
-            <div className="p-4 bg-green-300 text-white text-4xl font-bold flex items-center justify-center w-30 h-30">
+            <div className="p-4 bg-lime-500 text-white text-6xl font-bold flex items-center justify-center w-1/2 h-30">
               62
             </div>
           </div>
         </div>
-        <p className="text-right mt-6 text-sm font-semibold">
-          A Call for Change Soundness score is determined by calculating the
-          average of all its Supporting Beliefs strength ratings. Find out more
-          about Call for Change Soundness Score at{" "}
-          <span className="underline italic">
-            What is a Call for Change Soundness score?
-          </span>{" "}
-          on our{" "}
-          <a href="/about" className="underline">
-            About us (FAQs) page
-          </a>
-          .
-        </p>
+
+        <div className="flex justify-end w-full mt-6">
+          <div className="max-w-md">
+            <p className="text-right text-sm font-semibold">
+              A Call for Change Soundness score is determined by calculating the
+              average of all its Supporting Beliefs strength ratings. Find out
+              more about <span className="italic">Call for Change</span>{" "}
+              Soundness Score at{" "}
+              <span className="underline italic">
+                What is a <span className="not-italic">Call for Change</span>{" "}
+                Soundness score?
+              </span>{" "}
+              on our{" "}
+              <a href="/about" className="underline">
+                About us (FAQs)
+              </a>{" "}
+              page.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
