@@ -103,8 +103,8 @@ export default function FeedbackPopover() {
                   <SelectValue placeholder="Select an option" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="home">The Home page</SelectItem>
-                  <SelectItem value="bia">The Speak to Bia page</SelectItem>
+                  <SelectItem value="home">the Home page</SelectItem>
+                  <SelectItem value="bia">the Speak to Bia page</SelectItem>
                   <SelectItem value="calls-for-change">
                     Calls for Change
                   </SelectItem>
