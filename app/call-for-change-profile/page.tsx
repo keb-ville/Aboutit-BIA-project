@@ -6,10 +6,12 @@ const CallForChangePage = () => {
     <div>
       {/* Main Content */}
       <main className="mt-6">
-        <h2 className="text-3xl font-bold">Call for Change 4 Text.</h2>
-        <p className="mt-2 text-gray-700">
+        <h2 className="text-2xl font-bold text-green-600">Call for Change</h2>
+        <p className="mt-2 font-bold text-black-700 text-5xl">
           Call for Change 4 Text. Call for Change 4 Text. Call for Change 4
-          Text.
+          Text. Call for Change 4 Text. Call for Change 4 Text. Call for Change
+          4 Text. Call for Change 4 Text. Call for Change 4 Text. Call for
+          Change 4 Text.
         </p>
         <button className="mt-4 bg-green-600 text-white px-6 py-2 rounded-md">
           Join this Call for Change

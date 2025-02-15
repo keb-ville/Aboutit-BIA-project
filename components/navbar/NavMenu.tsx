@@ -44,18 +44,25 @@ function NavMenu() {
           <div className="rounded-md border bg-white p-2 shadow-md">
             <nav className="flex flex-col gap-1">
               <Link
+                href="/"
+                className="rounded-md px-4 py-2 text-sm hover:bg-muted"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
                 href="/bia"
                 className="rounded-md px-4 py-2 text-sm hover:bg-muted"
                 onClick={() => setIsOpen(false)}
               >
-                Speak to BIA
+                Speak to Bia
               </Link>
               <Collapsible
                 open={isCallForChangeOpen}
                 onOpenChange={setIsCallForChangeOpen}
               >
                 <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md px-4 py-2 text-sm hover:bg-muted">
-                  Call for Change
+                  Calls for Change
                   {isCallForChangeOpen ? (
                     <ChevronUp className="h-4 w-4" />
                   ) : (
@@ -84,7 +91,7 @@ function NavMenu() {
                     All Calls for Change by Topic
                   </Link>
                   <Link
-                    href="/campaign"
+                    href="/contact"
                     className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
                     onClick={() => {
                       setIsOpen(false);
