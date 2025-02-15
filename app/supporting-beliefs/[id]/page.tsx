@@ -210,7 +210,7 @@ export default function BeliefProfile() {
             {callsForChange.map((call) => (
               <li key={call.id}>
                 <Link
-                  href={`/topic-profile/1/cfc-profile`}
+                  href={`/call-for-change-profile`}
                   className="text-green-500 underline"
                 >
                   {call.text}
