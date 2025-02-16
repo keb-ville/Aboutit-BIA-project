@@ -7,7 +7,7 @@ const beliefsData: SupportingBeliefsData[] = [
     beliefType: "Factual",
     strengthRating: "Highly disputed (0)",
     supportingBelief: (
-      <Link href="/supporting-beliefs/1">
+      <Link href="/supporting-belief-factual/1">
         <u>
           Supporting Belief 1 Text. Supporting Belief 1 Text. Supporting Belief
           1 Text. Supporting Belief 1 Text
@@ -21,7 +21,7 @@ const beliefsData: SupportingBeliefsData[] = [
     beliefType: "Opinion-based",
     strengthRating: "Somewhat strong (59)",
     supportingBelief: (
-      <Link href="/supporting-beliefs/1">
+      <Link href="/supporting-belief-opinion/17">
         <u>
           Supporting Belief 22 Text. Supporting Belief 22 Text. Supporting
           Belief 22 Text. Supporting Belief 22 Text. Supporting Belief 22 Text.
@@ -36,7 +36,7 @@ const beliefsData: SupportingBeliefsData[] = [
     beliefType: "Opinion-based",
     strengthRating: "Weak (20)",
     supportingBelief: (
-      <Link href="/supporting-beliefs/1">
+      <Link href="/supporting-belief-opinion/17">
         <u>
           Supporting Belief 23 Text. Supporting Belief 23 Text. Supporting
           Belief 23 Text. Supporting Belief 23 Text.
@@ -50,7 +50,7 @@ const beliefsData: SupportingBeliefsData[] = [
     beliefType: "Factual",
     strengthRating: "Undisputed (99)",
     supportingBelief: (
-      <Link href="/supporting-beliefs/1">
+      <Link href="/supporting-belief-factual/1">
         <u>
           Supporting Belief 4 Text. Supporting Belief 4 Text. Supporting Belief
           4 Text.
@@ -64,7 +64,7 @@ const beliefsData: SupportingBeliefsData[] = [
     beliefType: "Opinion-based",
     strengthRating: "Very weak (3)",
     supportingBelief: (
-      <Link href="/supporting-beliefs/1">
+      <Link href="/supporting-belief-opinion/17">
         <u>
           Supporting Belief 18 Text. Supporting Belief 18 Text. Supporting
           Belief 18 Text. Supporting Belief 18 Text. Supporting Belief 18 Text.
@@ -80,7 +80,7 @@ const beliefsData: SupportingBeliefsData[] = [
     beliefType: "Factual",
     strengthRating: "Mostly undisputed (70)",
     supportingBelief: (
-      <Link href="/supporting-beliefs/1">
+      <Link href="/supporting-belief-factual/1">
         <u>
           Supporting Belief 6 Text. Supporting Belief 6 Text. Supporting Belief
           6 Text.
@@ -94,7 +94,7 @@ const beliefsData: SupportingBeliefsData[] = [
     beliefType: "Opinion-based",
     strengthRating: "Very strong (87)",
     supportingBelief: (
-      <Link href="/supporting-beliefs/1">
+      <Link href="/supporting-belief-opinion/17">
         <u>
           Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting
           Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17 Text.

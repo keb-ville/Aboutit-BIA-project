@@ -8,7 +8,7 @@ const data: TableData[] = [
     Trend: "▲",
     Rank: "1",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 18 Text. Call for Change 18 Text. Call for Change 18
           Text. Call for Change 18 Text. Call for Change 18 Text. Call for
@@ -23,7 +23,7 @@ const data: TableData[] = [
     Trend: "▼",
     Rank: "2",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 17 Text. Call for Change 17 Text. Call for Change 17
           Text. Call for Change 17 Text. Call for Change 17 Text.
@@ -37,7 +37,7 @@ const data: TableData[] = [
     Trend: "▬",
     Rank: "3",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 4 Text. Call for Change 4 Text. Call for Change 4
           Text. Call for Change 4 Text. Call for Change 4 Text. Call for Change
@@ -53,7 +53,7 @@ const data: TableData[] = [
     Trend: "▲",
     Rank: "4",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 2 Text. Call for Change 2 Text. Call for Change 2
           Text. Call for Change 2 Text.
@@ -67,7 +67,7 @@ const data: TableData[] = [
     Trend: "▼",
     Rank: "5",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 10 Text. Call for Change 10 Text. Call for Change 10
           Text. Call for Change 10 Text. Call for Change 10 Text. Call for
@@ -82,7 +82,7 @@ const data: TableData[] = [
     Trend: "▲",
     Rank: "6",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 23 Text. Call for Change 23 Text. Call for Change 23
           Text. Call for Change 23 Text. Call for Change 23 Text.
@@ -96,7 +96,7 @@ const data: TableData[] = [
     Trend: "▼",
     Rank: "7",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 13 Text. Call for Change 13 Text. Call for Change 13
           Text. Call for Change 13 Text. Call for Change 13 Text.
@@ -110,7 +110,7 @@ const data: TableData[] = [
     Trend: "▲",
     Rank: "8",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 19 Text. Call for Change 19 Text. Call for Change 19
           Text.
@@ -124,7 +124,7 @@ const data: TableData[] = [
     Trend: "▲",
     Rank: "9",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 14 Text. Call for Change 14 Text. Call for Change 14
           Text.
@@ -138,7 +138,7 @@ const data: TableData[] = [
     Trend: "▲",
     Rank: "10",
     "Top Trending Calls For Change": (
-      <Link href="/topic-profile/:id/cfc-profile">
+      <Link href="/call-for-change-profile">
         <u>
           Call for Change 28 Text. Call for Change 28 Text. Call for Change 28
           Text. Call for Change 28 Text.

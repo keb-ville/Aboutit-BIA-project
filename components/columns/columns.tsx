@@ -101,3 +101,64 @@ export const beliefsColumns: ColumnDef<SupportingBeliefsData>[] = [
     size: 40,
   },
 ];
+export type AllSupportingBeliefsData = {
+  id: number;
+  beliefType: "F" | "O";
+  strengthRating: {
+    label: string;
+    score: number;
+  };
+  description: React.ReactNode;
+  totalVotes: string;
+  verifications: string[];
+  upVotes: string;
+  downvotes: string;
+};
+
+export const allBeliefsColumns: ColumnDef<AllSupportingBeliefsData>[] = [
+  {
+    accessorKey: "beliefType",
+    header: "Belief Type F = Factual O = Opinion-based",
+    size: 40,
+  },
+  {
+    accessorKey: "strengthRating",
+    header: "Strength Rating",
+    size: 70,
+    // cell: ({ row }) => {
+    //   const rating = row.getValue("strengthRating") as string;
+    //   return (
+    //     <div className="flex items-center gap-2">
+    //       {getArrowIcon(rating)}
+    //       <span>{rating}</span>
+    //     </div>
+    //   );
+    // },
+  },
+  {
+    accessorKey: "description",
+    header: "Supporting Belief",
+    cell: ({ row }) => row.original["description"],
+    size: 200,
+  },
+  {
+    accessorKey: "totalVotes",
+    header: "Total Votes",
+    size: 40,
+  },
+  {
+    accessorKey: "verifications",
+    header: "Cast your vote",
+    size: 40,
+  },
+  {
+    accessorKey: "upVotes",
+    header: "Upvotes",
+    size: 40,
+  },
+  {
+    accessorKey: "downvotes",
+    header: "Downvotes",
+    size: 40,
+  },
+];
