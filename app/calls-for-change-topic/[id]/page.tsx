@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 
-//http://localhost:3000/topic-profile/1
-
 export default function TopicPage() {
   return (
     <div className="container mx-auto p-6">

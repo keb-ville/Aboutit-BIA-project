@@ -5,26 +5,12 @@ import {
   AllSupportingBeliefsData,
 } from "../columns/columns";
 
-// interface SupportingBelief {
-//   id: number;
-//   type: "Factual" | "Opinion-based";
-//   strengthRating: {
-//     label: string;
-//     score: number;
-//   };
-//   description: React.ReactNode;
-//   totalVotes: string;
-//   verifications: boolean[];
-//   baseVotes: string;
-//   downvotes: string;
-// }
-
 const allBeliefsData: AllSupportingBeliefsData[] = [
   {
     id: 1,
-    beliefType: "F",
+    beliefType: "Factual",
     strengthRating: {
-      label: "Highly disputed",
+      label: "Highly disputed (0)",
       score: 0,
     },
     description: (
@@ -40,9 +26,9 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
   },
   {
     id: 2,
-    beliefType: "O",
+    beliefType: "Opinion-based",
     strengthRating: {
-      label: "Somewhat strong",
+      label: "Somewhat strong (59)",
       score: 59,
     },
     description: (
@@ -59,9 +45,9 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
   },
   {
     id: 3,
-    beliefType: "O",
+    beliefType: "Opinion-based",
     strengthRating: {
-      label: "Weak",
+      label: "Weak (20)",
       score: 20,
     },
     description: (
@@ -77,9 +63,9 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
   },
   {
     id: 4,
-    beliefType: "F",
+    beliefType: "Factual",
     strengthRating: {
-      label: "Undisputed",
+      label: "Undisputed (99)",
       score: 99,
     },
     description: (
@@ -95,9 +81,9 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
   },
   {
     id: 5,
-    beliefType: "O",
+    beliefType: "Opinion-based",
     strengthRating: {
-      label: "Very Weak",
+      label: "Very weak (3)",
       score: 3,
     },
     description: (
@@ -115,9 +101,9 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
   },
   {
     id: 6,
-    beliefType: "F",
+    beliefType: "Factual",
     strengthRating: {
-      label: "Mostly undisputable",
+      label: "Mostly undisputed (70)",
       score: 70,
     },
     description: (
@@ -133,9 +119,9 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
   },
   {
     id: 7,
-    beliefType: "O",
+    beliefType: "Opinion-based",
     strengthRating: {
-      label: "Very strong",
+      label: "Very strong (87)",
       score: 87,
     },
     description: (

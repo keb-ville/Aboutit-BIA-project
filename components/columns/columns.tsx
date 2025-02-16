@@ -103,7 +103,7 @@ export const beliefsColumns: ColumnDef<SupportingBeliefsData>[] = [
 ];
 export type AllSupportingBeliefsData = {
   id: number;
-  beliefType: "F" | "O";
+  beliefType: "Factual" | "Opinion-based";
   strengthRating: {
     label: string;
     score: number;
@@ -125,15 +125,18 @@ export const allBeliefsColumns: ColumnDef<AllSupportingBeliefsData>[] = [
     accessorKey: "strengthRating",
     header: "Strength Rating",
     size: 70,
-    // cell: ({ row }) => {
-    //   const rating = row.getValue("strengthRating") as string;
-    //   return (
-    //     <div className="flex items-center gap-2">
-    //       {getArrowIcon(rating)}
-    //       <span>{rating}</span>
-    //     </div>
-    //   );
-    // },
+    cell: ({ row }) => {
+      const rating = row.getValue("strengthRating") as {
+        label: string;
+        score: number;
+      };
+      return (
+        <div className="flex items-center gap-2">
+          {getArrowIcon(rating.label)}
+          <span>{rating.label}</span>
+        </div>
+      );
+    },
   },
   {
     accessorKey: "description",

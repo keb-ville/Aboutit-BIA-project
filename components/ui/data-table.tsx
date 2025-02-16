@@ -44,7 +44,7 @@ export function DataTable<TData, TValue>({
               {headerGroup.headers.map((header) => (
                 <TableHead
                   key={header.id}
-                  className="bg-green-700 px-4 py-3 text-left font-medium text-white"
+                  className="bg-green-700 px-4 py-3 align-text-top text-left font-medium text-white"
                   style={{
                     width: `${(header.column.getSize() / totalSize) * 100}%`,
                   }}
