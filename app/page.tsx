@@ -1,7 +1,6 @@
 "use client";
 import Modal from "../components/modal/Modal";
 import Image from "next/image";
-// import { TextareaWithButton } from "../components/form/TextAreaInput";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
@@ -59,7 +58,7 @@ function HomePage() {
       </h2>
 
       <Image
-        src="https://snazzy-gnome-babc7b.netlify.app/static/staticImage1.png"
+        src="/public/staticImage1.png"
         alt="image"
         width={450}
         height={450}
