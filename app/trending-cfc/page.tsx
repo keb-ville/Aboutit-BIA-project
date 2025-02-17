@@ -4,7 +4,7 @@ import SupportingBeliefsData from "../../components/dataTable/SupportingBeliefs"
 function TrendingCfc() {
   return (
     <section>
-      <Link href="/calls-for-change-topic" className="underline">
+      <Link href="/calls-for-change-topic" className="underline text-green-600">
         ← See All Calls for Change by Topic
       </Link>
       <h1 className="text-3xl mt-10">

@@ -136,47 +136,6 @@ export default function BeliefProfile() {
                 strong (score 0 to 100).
               </p>
             </section>
-
-            {/* <section>
-              <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-green-600 text-lg">Very Strong</span>
-                  <span className="bg-white p-3 text-green-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
-                    →
-                  </span>
-                </div>
-                <div className="text-green-600">(Score: 87)</div>
-
-                <div className="w-full max-w-md mx-auto">
-                  <div className="flex h-2 mt-4">
-                    <div className="w-1/5 bg-red-500 rounded-l-full" />
-                    <div className="w-1/5 bg-orange-500" />
-                    <div className="w-1/5 bg-yellow-500" />
-                    <div className="w-1/5 bg-lime-500" />
-                    <div className="w-1/5 bg-green-500 rounded-r-full" />
-                  </div>
-
-                  <div className="flex justify-between text-xs mt-2">
-                    <span className="text-center w-1/5">Very weak</span>
-                    <span className="text-center w-1/5">Somewhat weak</span>
-                    <span className="text-center w-1/5">Moderate</span>
-                    <span className="text-center w-1/5">Somewhat strong</span>
-                    <span className="text-center w-1/5">Very stong</span>
-                  </div>
-                </div>
-
-                <p className="text-sm mt-4">
-                  Opinion-based Supporting Beliefs are given their Strength
-                  Ratings from the{" "}
-                  <Link href="/about" className="text-red-600 underline">
-                    Arguability
-                  </Link>{" "}
-                  scale. The Arguability scale ranges from Very weak to Very
-                  strong (score 0 to 100).
-                </p>
-              </div>
-            </section> */}
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg h-fit">

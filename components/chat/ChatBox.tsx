@@ -1,40 +1,67 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 
 export default function Chatbox() {
   const [messages, setMessages] = useState([
+    { sender: "assistant", text: "Hi, I'm Bia, your virtual assistant." },
     {
       sender: "assistant",
-      text: "Hi, I’m Bia, your virtual assistant. I’m here to help you Find & Express your beliefs, Communicate & Demand change, and Connect with like-minded people to work together, making your Democratic Engagement easier & more effective. What's your name?",
+      text: "I'm here to help you make a difference about the causes you care about by making the process of democratic engagement easier & more effective.",
+    },
+    {
+      sender: "assistant",
+      text: "Can I tell you more about myself and About It?",
+      options: ["Yes", "No"],
     },
   ]);
-  const [input, setInput] = useState("");
+
+  const [showOptions, setShowOptions] = useState(true);
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [chatEndRef]);
 
-  const sendMessage = () => {
-    if (input.trim()) {
+  const sendMessage = (text: string) => {
+    setMessages((prevMessages) => [...prevMessages, { sender: "user", text }]);
+    setShowOptions(false);
+
+    setTimeout(() => {
+      let response = "";
+      if (text === "Yes") {
+        response =
+          "Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes. Description Text Yes.";
+      } else if (text === "No") {
+        response =
+          "Description Text No. Description Text No. Description Text No. Description Text No. Description Text No. Description Text No. Description Text No. Description Text No. Description Text No.";
+      } else {
+        response =
+          "I'm not sure how to respond to that. Can you please choose Yes or No?";
+        setShowOptions(true);
+      }
       setMessages((prevMessages) => [
         ...prevMessages,
-        { sender: "user", text: input },
+        { sender: "assistant", text: response },
       ]);
-      setInput("");
-    }
+    }, 500);
   };
 
   const resetChat = () => {
     setMessages([
+      { sender: "assistant", text: "Hi, I'm Bia, your virtual assistant." },
       {
         sender: "assistant",
-        text: "Hi, I’m Bia, your virtual assistant. I’m here to help you Find & Express your beliefs, Communicate & Demand change, and Connect with like-minded people to work together, making your Democratic Engagement easier & more effective. What's your name?",
+        text: "I'm here to help you make a difference about the causes you care about by making the process of democratic engagement easier & more effective.",
+      },
+      {
+        sender: "assistant",
+        text: "Can I tell you more about myself and About It?",
+        options: ["Yes", "No"],
       },
     ]);
+    setShowOptions(true);
   };
 
   return (
@@ -51,26 +78,35 @@ export default function Chatbox() {
               }`}
             >
               {msg.text}
+              {msg.options && showOptions && (
+                <div className="mt-2 space-x-2">
+                  {msg.options.map((option) => (
+                    <Button
+                      key={option}
+                      onClick={() => sendMessage(option)}
+                      className="bg-white text-green-600 hover:bg-green-100"
+                    >
+                      {option}
+                    </Button>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
           <div ref={chatEndRef} />
         </div>
 
         <div className="p-2 border-t border-green-600">
-          <div className="flex gap-2">
-            <Input
-              type="text"
-              placeholder="Type a message..."
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-              className="flex-1 bg-white border"
-            />
-            <Button onClick={sendMessage} className="text-white">
-              Send
+          <div className="flex flex-col gap-2">
+            <Button onClick={resetChat} className="text-white w-full">
+              Reset conversation with Bia and start over
             </Button>
-            <Button onClick={resetChat} className="text-white">
-              Reset Conversation
+            <Button
+              onClick={() => (window.location.href = "/trending-cfc")}
+              className="text-white w-full"
+            >
+              Skip conversation with Bia and go straight to Trending Calls for
+              Change
             </Button>
           </div>
         </div>

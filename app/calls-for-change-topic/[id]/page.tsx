@@ -5,7 +5,10 @@ export default function TopicPage() {
   return (
     <div className="container mx-auto p-6">
       <nav className="flex justify-between items-center mb-6">
-        <Link href="/all-cfc-by-topic" className="underline text-green-600">
+        <Link
+          href="/calls-for-change-topic"
+          className="underline text-green-600"
+        >
           ← See all Topics
         </Link>
         <div className="space-x-4">

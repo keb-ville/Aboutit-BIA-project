@@ -3,9 +3,11 @@ import Link from "next/link";
 function SpeakToBiaPage() {
   return (
     <div>
-      <h2 className="flex justify-center text-right">Speak to Bia</h2>
+      <h2 className="flex justify-center text-3xl font-bold text-right">
+        Speak to Bia
+      </h2>
       <div className="flex justify-end">
-        <Link href="/trending-cfc" className="underline">
+        <Link href="/trending-cfc" className="underline text-green-600">
           Go to Trending Calls for Change {"-->"}
         </Link>
       </div>
