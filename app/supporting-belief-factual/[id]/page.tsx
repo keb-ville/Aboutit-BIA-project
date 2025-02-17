@@ -47,7 +47,9 @@ export default function BeliefProfile() {
 
       <div className="space-y-8">
         <div>
-          <h2 className="text-green-600 text-xl">Supporting Belief</h2>
+          <h2 className="text-green-600 text-xl font-bold">
+            Supporting Belief
+          </h2>
           <h1 className="text-4xl font-bold mt-2">
             Supporting Belief 1 Text. Supporting Belief 1 Text. Supporting
             Belief 1 Text. Supporting Belief 1 Text.
@@ -77,12 +79,76 @@ export default function BeliefProfile() {
                       page
                     </p>
                   </div>
-                  <p className="text-green-600 text-lg ml-4">Factual</p>
+                  <p className="text-green-600 text-lg ml-4 font-bold">
+                    Factual
+                  </p>
                 </div>
               </div>
             </section>
 
             <section>
+              <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-green-600 text-lg">
+                    Highly Disputed
+                  </span>
+                  <span className="bg-white p-3 text-red-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
+                    ←
+                  </span>
+                </div>
+                <div className="text-green-600">(Score: 0)</div>
+              </div>
+              <div className="flex items-start gap-4 mt-4">
+                <span className="text-lg mt-4 ">Disputability scale:</span>
+                <div className="flex-1">
+                  <div className="relative mt-6">
+                    <div className="flex h-6 w-96">
+                      <div className="w-1/5 bg-red-500 rounded-l-full" />
+                      <div className="w-1/5 bg-orange-500" />
+                      <div className="w-1/5 bg-yellow-500" />
+                      <div className="w-1/5 bg-lime-500" />
+                      <div className="w-1/5 bg-green-500 rounded-r-full" />
+                    </div>
+
+                    <div
+                      className="absolute top-0 left-0 transform -translate-y-1/2"
+                      style={{ marginTop: "8px" }}
+                    >
+                      <div className="flex flex-col items-center">
+                        <span className="text-sm">0</span>
+                        <div className="w-4 h-4 rounded-full border-4 border-red-600 bg-white" />
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between text-xs mt-2">
+                      <span className="text-center w-1/5">Highly disputed</span>
+                      <span className="text-center w-1/5">
+                        Moderately disputed
+                      </span>
+                      <span className="text-center w-1/5">
+                        Sometimes disputed
+                      </span>
+                      <span className="text-center w-1/5">
+                        Mostly undisputed
+                      </span>
+                      <span className="text-center w-1/5">Undisputed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm mt-6">
+                Factual Supporting Beliefs are given their Strength Ratings from
+                the{" "}
+                <Link href="/about" className="text-red-600 underline">
+                  Disputability
+                </Link>{" "}
+                scale. The Disputability scale ranges from Highly disputed to
+                Undisputed (score 0 to 100).
+              </p>
+            </section>
+
+            {/* <section>
               <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
@@ -127,7 +193,7 @@ export default function BeliefProfile() {
                   Undisputed (score 0 to 100).
                 </p>
               </div>
-            </section>
+            </section> */}
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg h-fit">
@@ -171,7 +237,7 @@ export default function BeliefProfile() {
         </div>
 
         <section className="space-y-4">
-          <div className="text-green-600">
+          <div className="text-green-600 font-bold">
             <p className="mb-4">
               <strong>Mostly undisputed</strong> means Description Text
               Description Text Description Text Description Text Description
@@ -182,17 +248,17 @@ export default function BeliefProfile() {
             <p>
               This has been determined by Description Text Description Text
               Description Text Description Text Description Text Description
-              Text Description Text Description Text.
+              Text.
             </p>
           </div>
 
           <p className="text-sm">
             Find out more about what other Strength Ratings mean at{" "}
-            <Link href="/faq#strength-ratings" className="underline italic">
+            <Link href="/about" className="underline italic">
               How are Strength Ratings determined?
             </Link>{" "}
             on our{" "}
-            <Link href="/faq" className="underline">
+            <Link href="/about" className="underline">
               About us (FAQs)
             </Link>{" "}
             page
@@ -206,7 +272,7 @@ export default function BeliefProfile() {
               supported by this Supporting Belief
             </span>
           </h2>
-          <ul className="list-disc pl-6 space-y-4">
+          <ul className="list-disc pl-6 font-bold space-y-4">
             {callsForChange.map((call) => (
               <li key={call.id}>
                 <Link

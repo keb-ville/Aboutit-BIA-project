@@ -6,20 +6,20 @@ interface VoteCount {
   downvotes: number;
 }
 
-interface CallForChange {
+interface CallForChangeOpinion {
   id: number;
   text: string;
 }
 
 const voteData: VoteCount = {
-  upvotes: 3311,
-  downvotes: 4356,
+  upvotes: 84,
+  downvotes: 98,
 };
 
-const callsForChange: CallForChange[] = [
+const callsForChange: CallForChangeOpinion[] = [
   {
     id: 1,
-    text: "Call for Change 1 Text. Call for Change 1 Text. Call for Change 1 Text.",
+    text: "Call for Change 2 Text. Call for Change 2 Text. Call for Change 2 Text. Call for Change 2 Text.",
   },
   {
     id: 4,
@@ -27,11 +27,7 @@ const callsForChange: CallForChange[] = [
   },
   {
     id: 11,
-    text: "Call for Change 11 Text. Call for Change 11 Text.",
-  },
-  {
-    id: 21,
-    text: "Call for Change 21 Text. Call for Change 21 Text. Call for Change 21 Text.",
+    text: "Call for Change 17 Text. Call for Change 17 Text. Call for Change 17 Text. Call for Change 17 Text. Call for Change 17 Text.",
   },
 ];
 
@@ -47,10 +43,13 @@ export default function BeliefProfile() {
 
       <div className="space-y-8">
         <div>
-          <h2 className="text-green-600 text-xl">Supporting Belief</h2>
+          <h2 className="text-green-600 font-bold text-xl">
+            Supporting Belief
+          </h2>
           <h1 className="text-4xl font-bold mt-2">
-            Supporting Belief 1 Text. Supporting Belief 1 Text. Supporting
-            Belief 1 Text. Supporting Belief 1 Text.
+            Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting
+            Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17
+            Text. Supporting Belief 17 Text. Supporting Belief 17 Text.
           </h1>
         </div>
 
@@ -77,7 +76,9 @@ export default function BeliefProfile() {
                       page
                     </p>
                   </div>
-                  <p className="text-green-600 text-lg ml-4">Factual</p>
+                  <p className="text-green-600 text-lg ml-4 font-bold">
+                    Opinion-based
+                  </p>
                 </div>
               </div>
             </section>
@@ -86,14 +87,66 @@ export default function BeliefProfile() {
               <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-green-600 text-lg">
-                    Highly disputed
-                  </span>
-                  <span className="bg-white p-3 text-red-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
-                    ←
+                  <span className="text-green-600 text-lg">Very Strong</span>
+                  <span className="bg-white p-3 text-green-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
+                    →
                   </span>
                 </div>
-                <div className="text-green-600">(Score: 0)</div>
+                <div className="text-green-600">(Score: 87)</div>
+              </div>
+              <div className="flex items-start gap-4 mt-4">
+                <span className="text-lg mt-4 ">Arguability scale:</span>
+                <div className="flex-1">
+                  <div className="relative mt-6">
+                    <div className="flex h-6 w-96">
+                      <div className="w-1/5 bg-red-500 rounded-l-full" />
+                      <div className="w-1/5 bg-orange-500" />
+                      <div className="w-1/5 bg-yellow-500" />
+                      <div className="w-1/5 bg-lime-500" />
+                      <div className="w-1/5 bg-green-500 rounded-r-full" />
+                    </div>
+
+                    <div
+                      className="absolute top-0 transform -translate-y-1/2"
+                      style={{ marginTop: "8px", left: "85%" }}
+                    >
+                      <div className="flex flex-col items-center">
+                        <span className="text-sm">87</span>
+                        <div className="w-4 h-4 rounded-full border-4 border-green-600 bg-white" />
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between text-xs mt-2">
+                      <span className="text-center w-1/5">Very weak</span>
+                      <span className="text-center w-1/5">Somewhat weak</span>
+                      <span className="text-center w-1/5">Moderate</span>
+                      <span className="text-center w-1/5">Somewhat strong</span>
+                      <span className="text-center w-1/5">Very strong</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm mt-6">
+                Opinion-based Supporting Beliefs are given their Strength
+                Ratings from the{" "}
+                <Link href="/about" className="text-red-600 underline">
+                  Arguability
+                </Link>{" "}
+                scale. The Arguability scale ranges from Very weak to Very
+                strong (score 0 to 100).
+              </p>
+            </section>
+
+            {/* <section>
+              <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-green-600 text-lg">Very Strong</span>
+                  <span className="bg-white p-3 text-green-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
+                    →
+                  </span>
+                </div>
+                <div className="text-green-600">(Score: 87)</div>
 
                 <div className="w-full max-w-md mx-auto">
                   <div className="flex h-2 mt-4">
@@ -105,29 +158,25 @@ export default function BeliefProfile() {
                   </div>
 
                   <div className="flex justify-between text-xs mt-2">
-                    <span className="text-center w-1/5">Highly disputed</span>
-                    <span className="text-center w-1/5">
-                      Moderately disputed
-                    </span>
-                    <span className="text-center w-1/5">
-                      Sometimes disputed
-                    </span>
-                    <span className="text-center w-1/5">Mostly undisputed</span>
-                    <span className="text-center w-1/5">Undisputed</span>
+                    <span className="text-center w-1/5">Very weak</span>
+                    <span className="text-center w-1/5">Somewhat weak</span>
+                    <span className="text-center w-1/5">Moderate</span>
+                    <span className="text-center w-1/5">Somewhat strong</span>
+                    <span className="text-center w-1/5">Very stong</span>
                   </div>
                 </div>
 
                 <p className="text-sm mt-4">
-                  Factual Supporting Beliefs are given their Strength Ratings
-                  from the{" "}
+                  Opinion-based Supporting Beliefs are given their Strength
+                  Ratings from the{" "}
                   <Link href="/about" className="text-red-600 underline">
-                    Disputability
+                    Arguability
                   </Link>{" "}
-                  scale. The Disputability scale ranges from Highly disputed to
-                  Undisputed (score 0 to 100).
+                  scale. The Arguability scale ranges from Very weak to Very
+                  strong (score 0 to 100).
                 </p>
               </div>
-            </section>
+            </section> */}
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg h-fit">
@@ -171,16 +220,17 @@ export default function BeliefProfile() {
         </div>
 
         <section className="space-y-4">
-          <div className="text-green-600">
+          <div className="text-green-600 font-bold">
             <p className="mb-4">
-              <strong>Mostly undisputed</strong> means Description Text
-              Description Text Description Text Description Text Description
+              <strong>Very Strong</strong> means Description Text Description
               Text Description Text Description Text Description Text
               Description Text Description Text Description Text Description
-              Text Description Text.
+              Text Description Text Description Text Description Text
             </p>
             <p>
               This has been determined by Description Text Description Text
+              Description Text Description Text Description Text Description
+              Text Description Text Description Text Description Text
               Description Text Description Text Description Text Description
               Text Description Text Description Text.
             </p>
@@ -188,11 +238,11 @@ export default function BeliefProfile() {
 
           <p className="text-sm">
             Find out more about what other Strength Ratings mean at{" "}
-            <Link href="/faq#strength-ratings" className="underline italic">
+            <Link href="/about" className="underline italic">
               How are Strength Ratings determined?
             </Link>{" "}
             on our{" "}
-            <Link href="/faq" className="underline">
+            <Link href="/about" className="underline">
               About us (FAQs)
             </Link>{" "}
             page
@@ -206,7 +256,7 @@ export default function BeliefProfile() {
               supported by this Supporting Belief
             </span>
           </h2>
-          <ul className="list-disc pl-6 space-y-4">
+          <ul className="list-disc font-bold pl-6 space-y-4">
             {callsForChange.map((call) => (
               <li key={call.id}>
                 <Link
