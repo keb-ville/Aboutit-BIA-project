@@ -6,7 +6,7 @@ import {
   DialogTitle,
 } from "../../src/components/ui/dialog";
 import { Button } from "../../components/ui/button";
-import Link from "next/link";
+
 interface LeaveDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;

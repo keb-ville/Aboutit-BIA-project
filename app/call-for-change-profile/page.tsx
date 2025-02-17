@@ -70,7 +70,9 @@ const CallForChangePage = () => {
                 Soundness score is determined by calculating the average of all
                 its Supporting Beliefs&apos; strength ratings. Find out more
                 about{" "}
-                <a className="italic hover:text-gray-600">Call for Change</a>{" "}
+                <span className="italic hover:text-gray-600">
+                  Call for Change
+                </span>{" "}
                 Soundness Score at{" "}
                 <a href="/about" className="underline hover:text-gray-600">
                   What is a Call for Change Soundness Score?
@@ -156,7 +158,7 @@ const CallForChangePage = () => {
             <div>
               <ul className="text-black list-none m-10 underline">
                 <li>
-                  <a href="/calls-for-change-topic/1">TOPIC 8</a>
+                  <Link href="/calls-for-change-topic/1">TOPIC 8</Link>
                 </li>
                 <li>TOPIC 21</li>
                 <li>TOPIC 23</li>
