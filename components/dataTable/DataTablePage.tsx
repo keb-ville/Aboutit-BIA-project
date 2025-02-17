@@ -2,7 +2,6 @@ import { type TableData, columns } from "../columns/columns";
 import { DataTable } from "../ui/data-table";
 import Link from "next/link";
 
-// This is where you can put your own hardcoded data
 const data: TableData[] = [
   {
     Trend: "▲",
