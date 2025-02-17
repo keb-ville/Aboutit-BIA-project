@@ -12,7 +12,7 @@ function Footer() {
             A product of Better Impact Analysis Limited, a UK registered company
           </p>
 
-          <Image src="/public/image1.svg" alt="Logo" width={50} height={180} />
+          <Image src="/bialogo.jpeg" alt="Logo" width={120} height={120} />
         </div>
       </div>
     </footer>
