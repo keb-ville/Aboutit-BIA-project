@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Logo from "../navbar/Logo";
-import Image from "next/image";
+// import Image from "next/image";
 
 function Footer() {
   return (
