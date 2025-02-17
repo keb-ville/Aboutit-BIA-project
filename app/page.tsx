@@ -58,7 +58,12 @@ function HomePage() {
         <span className="text-green-500">works</span>
       </h2>
 
-      <Image src="/staticImage1.png" alt="image" width={450} height={450} />
+      <Image
+        src="/static/staticImage1.png"
+        alt="image"
+        width={450}
+        height={450}
+      />
       <Modal isOpen={isModalOpen} onClose={closeModal} />
 
       <Button className="w-1/3">

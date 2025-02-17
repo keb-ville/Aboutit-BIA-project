@@ -10,7 +10,12 @@ function Footer() {
           <p className="text-xs text-gray-600">
             A product of Better Impact Analysis Limited, a UK registered company
           </p>
-          <Image src="/BIAlogo.webp" alt="Logo" width={50} height={180} />
+          <Image
+            src="/static/BIAlogo.webp"
+            alt="Logo"
+            width={50}
+            height={180}
+          />
         </div>
       </div>
     </footer>
