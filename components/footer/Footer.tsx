@@ -11,7 +11,7 @@ function Footer() {
             A product of Better Impact Analysis Limited, a UK registered company
           </p>
           <Image
-            src="/static/BIAlogo.webp"
+            src="https://snazzy-gnome-babc7b.netlify.app/static/BIAlogo.webp"
             alt="Logo"
             width={50}
             height={180}

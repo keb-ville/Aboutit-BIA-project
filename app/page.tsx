@@ -59,7 +59,7 @@ function HomePage() {
       </h2>
 
       <Image
-        src="/static/staticImage1.png"
+        src="https://snazzy-gnome-babc7b.netlify.app/static/staticImage1.png"
         alt="image"
         width={450}
         height={450}
