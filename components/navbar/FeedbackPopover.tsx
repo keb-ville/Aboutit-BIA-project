@@ -43,7 +43,7 @@ export default function FeedbackPopover() {
         timestamp: new Date(),
       });
 
-      // Show success message and clear form
+
       setSubmitted(true);
       setTimeout(() => setSubmitted(false), 5000);
       setFeedback("");
