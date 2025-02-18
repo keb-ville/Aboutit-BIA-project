@@ -60,7 +60,7 @@ function HomePage() {
       <Image src="/staticimage2.svg" alt="image" width={500} height={300} />
       <Modal isOpen={isModalOpen} onClose={closeModal} />
       <Link href="/bia" className="w-1/3">
-        <Button>Get started</Button>
+        <Button className="w-full">Get started</Button>
       </Link>
     </div>
   );
