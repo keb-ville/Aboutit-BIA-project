@@ -42,7 +42,7 @@ export default function BeliefProfile() {
         href="/supporting-beliefs"
         className="text-green-600 underline mb-8 block"
       >
-        See all Supporting Beliefs
+        ← See all Supporting Beliefs
       </Link>
 
       <div className="space-y-8">
@@ -139,12 +139,9 @@ export default function BeliefProfile() {
               </div>
               <p className="text-sm mt-6">
                 Factual Supporting Beliefs are given their Strength Ratings from
-                the{" "}
-                <Link href="/about" className="text-red-600 underline">
-                  Disputability
-                </Link>{" "}
-                scale. The Disputability scale ranges from Highly disputed to
-                Undisputed (score 0 to 100).
+                the <Link href="/about">Disputability</Link> scale. The
+                Disputability scale ranges from Highly disputed to Undisputed
+                (score 0 to 100).
               </p>
             </section>
           </div>

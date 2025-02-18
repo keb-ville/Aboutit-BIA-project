@@ -97,7 +97,7 @@ export default function CampaignsPage() {
                 <p>
                   Find out more about the campaigns at{" "}
                   <span className="italic underline">
-                    What campains do you faciliate?{" "}
+                    What campaigns do you faciliate?{" "}
                   </span>
                   on our <span className="underline">About us (FAQs) </span>page
                 </p>

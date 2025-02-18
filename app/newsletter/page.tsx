@@ -10,7 +10,7 @@ function Newsletter() {
       <p className="mt-10 mb-6 md:w-full text-green-600">
         Description text. Description text. Description text. Description text.
         Description text. Description text. Description text.{" "}
-        <Link href="/about" className="underline">
+        <Link href="/newsletter" className="underline">
           Description text with links. Description text with Links. Description
           text with Links. Description text with Links. Description text with
           Links. Description text with Links.

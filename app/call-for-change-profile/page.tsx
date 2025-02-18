@@ -220,7 +220,7 @@ const CallForChangePage = () => {
             <h4 className="text-lg font-semibold">FACTUAL</h4>
           </div>
           <div className="p-4 text-green-600 underline font-bold text-xl">
-            <Link href="/supporting-beliefs/1">
+            <Link href="/supporting-belief-factual/1">
               Supporting Belief 1 Text. Supporting Belief 1 Text. Supporting
               Belief 1 Text. Supporting Belief 1 Text.
             </Link>
@@ -236,10 +236,12 @@ const CallForChangePage = () => {
           <div className="p-4 bg-white shadow-md">
             <h4 className="text-lg font-semibold">FACTUAL</h4>
           </div>
-          <div className="p-4 text-green-600 underline font-bold text-xl">
-            Supporting Belief 4 Text. Supporting Belief 4 Text. Supporting
-            Belief 4 Text.
-          </div>
+          <Link href="/supporting-belief-factual/1">
+            <div className="p-4 text-green-600 underline font-bold text-xl">
+              Supporting Belief 4 Text. Supporting Belief 4 Text. Supporting
+              Belief 4 Text.
+            </div>
+          </Link>
           <div className="p-4 bg-green-500 text-white shadow-md font-bold">
             <p>Undisputed (99)</p>
           </div>
@@ -251,12 +253,14 @@ const CallForChangePage = () => {
           <div className="p-4 bg-white shadow-md">
             <h4 className="text-lg font-semibold">OPINION-BASED</h4>
           </div>
-          <div className="p-4 text-green-600 underline font-bold text-xl">
-            Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting
-            Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17
-            Text. Supporting Belief 17 Text. Supporting Belief 17 Text.
-            Supporting Belief 17 Text. Supporting Belief 17 Text.
-          </div>
+          <Link href="/supporting-belief-opinion/17">
+            <div className="p-4 text-green-600 underline font-bold text-xl">
+              Supporting Belief 17 Text. Supporting Belief 17 Text. Supporting
+              Belief 17 Text. Supporting Belief 17 Text. Supporting Belief 17
+              Text. Supporting Belief 17 Text. Supporting Belief 17 Text.
+              Supporting Belief 17 Text. Supporting Belief 17 Text.
+            </div>
+          </Link>
           <div className="p-4 bg-green-500 text-white shadow-md font-bold">
             <p>Very Strong (87)</p>
           </div>
