@@ -132,9 +132,10 @@ export default function TopicsPage() {
               className="block h-full"
             >
               <div
-                className={`border rounded-lg p-4 border-black bg-white text-left shadow hover:shadow-lg transition-shadow h-full flex flex-col ${
-                  topic.isSpecial ? "ring-2 ring-green-600" : ""
-                }`}
+                className={`border rounded-lg p-4 border-black bg-white text-left shadow hover:shadow-lg transition-shadow h-full flex flex-col
+                  // topic.isSpecial ? "ring-2 ring-green-600" : ""
+                // }
+                // `}
               >
                 <div className="bg-gray-300 h-24 mb-2 relative flex-shrink-0">
                   <div className="absolute inset-0 flex items-center justify-center">
