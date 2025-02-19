@@ -20,7 +20,7 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
       </Link>
     ),
     totalVotes: "7,667",
-    verifications: [true].map((v) => (v ? "✅" : "❌")),
+    verifications: [],
     upVotes: "3,311",
     downvotes: "4,356",
   },
@@ -39,7 +39,7 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
       </Link>
     ),
     totalVotes: "2,301",
-    verifications: [false, true, false].map((v) => (v ? "✅" : "❌")),
+    verifications: [],
     upVotes: "2,070",
     downvotes: "231",
   },
@@ -57,7 +57,7 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
       </Link>
     ),
     totalVotes: "1,598",
-    verifications: [true].map((v) => (v ? "✅" : "❌")),
+    verifications: [],
     upVotes: "153",
     downvotes: "1,445",
   },
@@ -75,7 +75,7 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
       </Link>
     ),
     totalVotes: "687",
-    verifications: [false, true].map((v) => (v ? "✅" : "❌")),
+    verifications: [],
     upVotes: "544",
     downvotes: "143",
   },
@@ -95,7 +95,7 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
       </Link>
     ),
     totalVotes: "574",
-    verifications: [false, true, false].map((v) => (v ? "✅" : "❌")),
+    verifications: [],
     upVotes: "124",
     downvotes: "450",
   },
@@ -113,7 +113,7 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
       </Link>
     ),
     totalVotes: "344",
-    verifications: [true, false].map((v) => (v ? "✅" : "❌")),
+    verifications: [],
     upVotes: "114",
     downvotes: "230",
   },
@@ -133,7 +133,7 @@ const allBeliefsData: AllSupportingBeliefsData[] = [
       </Link>
     ),
     totalVotes: "182",
-    verifications: [true, false].map((v) => (v ? "✅" : "❌")),
+    verifications: [],
     upVotes: "84",
     downvotes: "98",
   },

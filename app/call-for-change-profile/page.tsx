@@ -85,7 +85,7 @@ const CallForChangePage = () => {
               </p>
             </div>
           </div>
-          <div className="flex-1 rounded-r-lg bg-[#a4d233] p-4 text-white">
+          <div className="flex-1 rounded-r-lg bg-lime-500 p-4 text-white">
             <div className="text-[72px] font-bold leading-none">62</div>
             <p className="mt-3 text-base leading-relaxed">
               A Soundness score of 62 is considered Description Text Description

@@ -28,14 +28,16 @@ export default function CampaignsPage() {
             <span className="font-bold ">Welcome</span> to the
           </h1>
           <Link href="/call-for-change-profile">
-            <p className="italic underline font-bold">
+            <p className="italic underline font-bold text-3xl">
               Call for Change 4 Text. Call for Change 4 Text. Call for Change 4
               Text. Call for Change 4 Text. Call for Change 4 Text. Call for
               Change 4 Text. Call for Change 4 Text. Call for Change 4 Text.
               Call for Change 4 Text.
             </p>
           </Link>
-          <p className="text-3xl font-italic text-green-600">Campaigns page</p>
+          <p className="text-5xl font-italic font-bold text-green-600">
+            Campaigns page
+          </p>
         </div>
 
         <div className="space-y-8">

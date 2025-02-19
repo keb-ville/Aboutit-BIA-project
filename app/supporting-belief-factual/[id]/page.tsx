@@ -63,7 +63,7 @@ export default function BeliefProfile() {
                 Profile
               </h2>
 
-              <div className=" border border-black p-4 rounded-lg">
+              <div className=" border border-none p-4 rounded-lg">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h3 className="text-xl font-bold mb-2">Belief Type</h3>
@@ -90,10 +90,10 @@ export default function BeliefProfile() {
               <h3 className="text-xl font-bold mb-4">Strength Rating</h3>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-green-600 text-lg">
+                  <span className="text-green-600 text-3xl font-bold">
                     Highly Disputed
                   </span>
-                  <span className="bg-white p-3 text-red-500 text-5xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
+                  <span className="bg-white p-3 text-red-500 text-9xl font-bold-rounded-full inline-block w-16 h-16 items-center justify-center">
                     ←
                   </span>
                 </div>
