@@ -35,7 +35,7 @@ function TrendingCfc() {
           </Link>
         </p>
         <div className="flex justify-between items-center mb-10">
-          <Link href="/callsforchange" className="underline text-green-500">
+          <Link href="/supporting-beliefs" className="underline text-green-500">
             ← See all Supporting Beliefs
           </Link>
         </div>
